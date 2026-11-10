@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Microsoft Power Automate e Tutoriais — Automatize seu dia a dia</title>
-  <meta name="description" content="Conheça o Microsoft Power Automate e aprenda passo a passo como criar fluxos para receber avisos de e-mails importantes e salvar anexos automaticamente no OneDrive.">
+  <meta name="description" content="Aprenda passo a passo no Microsoft Power Automate como organizar a rotina universitária: salvar trabalhos do Teams no Microsoft To Do, copiar materiais de aula para o OneDrive e agendar prazos no Calendário.">
   <meta name="theme-color" content="#142B50">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="Automatize seu dia a dia">
-  <meta property="og:title" content="Microsoft Power Automate e Tutoriais — Automatize seu dia a dia">
-  <meta property="og:description" content="Guia completo para iniciantes com dois tutoriais práticos no Power Automate.">
+  <meta property="og:title" content="Microsoft Power Automate e Tutoriais Universitários — Automatize seu dia a dia">
+  <meta property="og:description" content="Três tutoriais práticos no Power Automate para estudantes universitários: Teams, Microsoft To Do, OneDrive e Calendário do Outlook.">
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,6 @@
           <li><a href="automacao.html">Entenda a automação</a></li>
           <li><a href="power-automate.html" aria-current="page">Ferramenta</a></li>
           <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
-          <li><a href="desafios.html">Desafios</a></li>
           <li><a href="sobre.html">Sobre o projeto</a></li>
         </ul>
       </nav>
@@ -59,9 +58,9 @@
             <li><span aria-current="page">Microsoft Power Automate</span></li>
           </ol>
         </nav>
-        <p class="eyebrow">Ferramenta e tutoriais práticos</p>
+        <p class="eyebrow">Ferramenta e tutoriais para estudantes</p>
         <h1>Microsoft Power Automate</h1>
-        <p class="lead">Conheça a plataforma de automação da Microsoft e siga dois tutoriais passo a passo para automatizar tarefas reais usando sua conta institucional.</p>
+        <p class="lead">Conheça a plataforma de automação da Microsoft e siga três tutoriais passo a passo pensados para a rotina universitária: organize trabalhos do Teams no Microsoft To Do, guarde materiais de aula no OneDrive e agende prazos no Calendário.</p>
         <div class="btn-group" style="margin-top:var(--space-5)">
           <a class="btn btn--primary" href="#tutoriais">Ir direto para os tutoriais</a>
           <a class="btn btn--secondary" href="https://learn.microsoft.com/pt-br/power-automate/">Documentação oficial</a>
@@ -79,7 +78,7 @@
               <li><a href="#visao-geral">O que é e para que serve</a></li>
               <li><a href="#funcionalidades">Principais funcionalidades</a></li>
               <li><a href="#como-funciona">Como funciona um fluxo</a></li>
-              <li><a href="#exemplos-uso">Exemplos de utilização</a></li>
+              <li><a href="#exemplos-uso">Exemplos na universidade</a></li>
               <li><a href="#licenciamento">Licenciamento e limitações</a></li>
               <li><a href="#tutoriais">Tutoriais passo a passo</a></li>
             </ol>
@@ -89,8 +88,8 @@
         <div class="prose">
           <section class="article-section" aria-labelledby="visao-geral">
             <h2 id="visao-geral">O que é o Power Automate e para que serve?</h2>
-            <p>O <strong>Microsoft Power Automate</strong> é uma ferramenta on-line da Microsoft que permite criar fluxos de trabalho automatizados entre aplicativos e serviços — sem precisar escrever código.</p>
-            <p>Com ele, você conecta ferramentas que já fazem parte da rotina acadêmica ou profissional (como <strong>Outlook</strong>, <strong>OneDrive</strong>, <strong>Microsoft Teams</strong>, <strong>Microsoft Forms</strong>, <strong>SharePoint</strong> e <strong>Excel</strong>) para que tarefas repetitivas aconteçam sozinhas: salvar anexos, enviar avisos, registrar respostas de formulários ou criar lembretes.</p>
+            <p>O <strong>Microsoft Power Automate</strong> é uma ferramenta on-line da Microsoft que permite criar fluxos de trabalho automatizados conectando aplicativos e serviços — sem precisar escrever código.</p>
+            <p>Para estudantes universitários que utilizam uma conta institucional (<strong>Microsoft 365 Education</strong>), ele conecta os aplicativos que já fazem parte das disciplinas: <strong>Microsoft Teams</strong>, <strong>Microsoft To Do</strong>, <strong>OneDrive for Business</strong>, <strong>SharePoint</strong> e <strong>Calendário do Outlook</strong>.</p>
           </section>
 
           <section class="article-section" aria-labelledby="funcionalidades">
@@ -98,15 +97,15 @@
             <div class="grid grid--2">
               <div class="card">
                 <h3>Fluxos da nuvem automatizados</h3>
-                <p>Iniciam sozinhos quando um evento acontece — por exemplo, quando chega um novo e-mail ou um arquivo é salvo em uma pasta.</p>
+                <p>Iniciam sozinhos quando um evento acontece — por exemplo, quando o professor publica um aviso ou sobe um material na equipe do Teams.</p>
+              </div>
+              <div class="card">
+                <h3>Fluxos instantâneos no Teams</h3>
+                <p>Rodam quando você clica nos três pontinhos (<code>...</code>) de uma mensagem no Teams, permitindo informar uma data de prazo e agendar o trabalho na hora.</p>
               </div>
               <div class="card">
                 <h3>Fluxos agendados</h3>
-                <p>Executam em horários definidos por você: todos os dias às 8h, toda segunda-feira ou uma vez por mês.</p>
-              </div>
-              <div class="card">
-                <h3>Fluxos instantâneos</h3>
-                <p>Rodam somente quando você clica em um botão no portal web ou dentro de aplicativos integrados.</p>
+                <p>Executam em horários definidos por você: todos os dias às 8h ou toda segunda-feira no início da semana de estudos.</p>
               </div>
               <div class="card">
                 <h3>Modelos prontos</h3>
@@ -117,40 +116,39 @@
 
           <section class="article-section" aria-labelledby="como-funciona">
             <h2 id="como-funciona">Como funciona um fluxo: gatilhos e ações</h2>
-            <p>No Power Automate, todo fluxo na nuvem segue a estrutura que vimos em <a href="automacao.html">Entenda a automação</a>:</p>
+            <p>No Power Automate, todo fluxo segue a estrutura apresentada em <a href="automacao.html">Entenda a automação</a>:</p>
             <ul class="check-list">
-              <li><strong>Gatilho (<span lang="en">Trigger</span>):</strong> é o primeiro bloco do fluxo. Define qual evento inicia a automação — por exemplo, <span class="ui-label">Quando um novo email chegar (V3)</span> no conector <strong>Office 365 Outlook</strong>.</li>
-              <li><strong>Ação (<span lang="en">Action</span>):</strong> é o que o fluxo faz em seguida — por exemplo, <span class="ui-label">Enviar um email (V2)</span> ou <span class="ui-label">Criar arquivo</span> no <strong>OneDrive for Business</strong>.</li>
-              <li><strong>Conteúdo dinâmico:</strong> permite reaproveitar informações do gatilho (como o <em>Assunto</em>, o <em>Remetente</em> ou os <em>Anexos</em> do e-mail) dentro das ações seguintes.</li>
+              <li><strong>Gatilho (<span lang="en">Trigger</span>):</strong> é o primeiro bloco do fluxo. Define o que inicia a automação — como <span class="ui-label">Quando uma nova mensagem de canal é adicionada</span> no <strong>Microsoft Teams</strong> ou <span class="ui-label">Quando um arquivo é criado (somente propriedades)</span> no <strong>SharePoint</strong>.</li>
+              <li><strong>Ação (<span lang="en">Action</span>):</strong> é a tarefa executada em seguida — como <span class="ui-label">Adicionar uma tarefa (V3)</span> no <strong>Microsoft To-Do (Business)</strong>, <span class="ui-label">Criar arquivo</span> no <strong>OneDrive for Business</strong> ou <span class="ui-label">Criar evento (V4)</span> no <strong>Office 365 Outlook</strong>.</li>
+              <li><strong>Conteúdo dinâmico:</strong> permite reaproveitar informações do gatilho (como o texto da mensagem, o nome do arquivo ou a data escolhida) dentro das ações seguintes.</li>
             </ul>
           </section>
 
           <section class="article-section" aria-labelledby="exemplos-uso">
-            <h2 id="exemplos-uso">Exemplos de utilização no dia a dia</h2>
+            <h2 id="exemplos-uso">Exemplos de utilização na rotina universitária</h2>
             <ul>
-              <li><strong>Secretaria ou coordenação:</strong> receber um aviso sempre que chegar um e-mail com a palavra “Urgente” ou vindo de um setor específico.</li>
-              <li><strong>Organização de documentos:</strong> salvar automaticamente todos os anexos recebidos em uma pasta do OneDrive para consulta posterior.</li>
-              <li><strong>Eventos e inscrições:</strong> registrar cada nova resposta do Microsoft Forms em uma tabela do Excel e enviar confirmação por e-mail ao participante.</li>
-              <li><strong>Rotina semanal:</strong> enviar toda segunda-feira de manhã um lembrete para a equipe no Teams ou por e-mail.</li>
+              <li><strong>Lista de trabalhos centralizada:</strong> transformar avisos de trabalhos publicados no canal da turma no Teams em tarefas no <strong>Microsoft To Do</strong> para acompanhar o que falta entregar.</li>
+              <li><strong>Backup automático de materiais de aula:</strong> copiar slides, apostilas e listas de exercícios publicados pelo professor na equipe da disciplina diretamente para uma pasta de estudos no seu <strong>OneDrive</strong>.</li>
+              <li><strong>Agenda de entregas com lembrete:</strong> clicar em uma mensagem de trabalho no Teams, informar a data de entrega e criar automaticamente o compromisso no <strong>Calendário do Outlook</strong>.</li>
             </ul>
           </section>
 
           <section class="article-section" aria-labelledby="licenciamento">
-            <h2 id="licenciamento">Limitações de licenciamento e acesso</h2>
-            <p>Antes de criar seus fluxos, é importante conhecer como funciona o acesso ao Power Automate:</p>
+            <h2 id="licenciamento">Limitações de licenciamento e do Microsoft Teams</h2>
+            <p>Para que suas automações funcionem sem surpresas, conheça os limites técnicos reais da plataforma:</p>
             <div class="callout callout--warning">
               <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17h.01"/></svg>
               <div>
-                <p class="callout__title">O que está incluído e o que exige licença paga</p>
+                <p class="callout__title">O que você precisa saber antes de começar</p>
                 <ul>
-                  <li><strong>Contas institucionais (Microsoft 365 Education ou Business):</strong> geralmente incluem acesso aos <strong>conectores padrão</strong> (Office 365 Outlook, OneDrive for Business, SharePoint, Microsoft Forms, Teams e Excel Online). Os dois tutoriais desta página utilizam exclusivamente conectores padrão.</li>
-                  <li><strong>Contas pessoais gratuitas (<code>@outlook.com</code>, <code>@hotmail.com</code>):</strong> permitem criar fluxos básicos na nuvem com conectores pessoais (Outlook.com e OneDrive pessoal), mas os nomes dos conectores são diferentes dos corporativos.</li>
-                  <li><strong>Conectores Premium (marcados com um selo de diamante):</strong> integrações avançadas (como bancos de dados externos, HTTP personalizado ou sistemas pagos) exigem licença paga do Power Automate.</li>
-                  <li><strong>Políticas da instituição:</strong> o setor de tecnologia (TI) da sua universidade ou empresa pode restringir alguns conectores por segurança. Se algum recurso não estiver disponível, consulte a equipe responsável.</li>
+                  <li><strong>Aba “Tarefas” (Assignments) do Teams:</strong> o Power Automate <strong>não possui um gatilho nativo exclusivo para a aba Tarefas</strong> do Teams Education. Por isso, nossos tutoriais usam os dois caminhos oficiais disponíveis: monitorar as <strong>mensagens publicadas no canal da disciplina</strong> (onde o próprio bot de Tarefas do Teams ou o professor anuncia os trabalhos) e acionar o fluxo <strong>a partir de uma mensagem selecionada</strong>.</li>
+                  <li><strong>Conta institucional (Microsoft 365 Education):</strong> os conectores usados nos três tutoriais (<em>Microsoft Teams</em>, <em>Microsoft To-Do (Business)</em>, <em>SharePoint</em>, <em>OneDrive for Business</em> e <em>Office 365 Outlook</em>) são <strong>conectores padrão</strong>, incluídos na maioria das contas estudantis sem custo adicional.</li>
+                  <li><strong>Conectores Premium (ícone de diamante):</strong> recursos avançados exigem licença paga e não são utilizados nesta plataforma.</li>
+                  <li><strong>Políticas da universidade:</strong> a equipe de TI da instituição pode restringir alguns conectores ou permissões em equipes de disciplinas.</li>
                 </ul>
               </div>
             </div>
-            <p>Para consultar detalhes atualizados sobre planos, limites de execução e conectores, acesse a <a href="https://learn.microsoft.com/pt-br/power-automate/">documentação oficial do Microsoft Power Automate</a>.</p>
+            <p>Para consultar detalhes atualizados sobre planos e conectores, acesse a <a href="https://learn.microsoft.com/pt-br/power-automate/">documentação oficial do Microsoft Power Automate</a>.</p>
           </section>
         </div>
       </div>
@@ -160,21 +158,26 @@
     <section class="section section--gray" id="tutoriais" aria-labelledby="tutoriais-heading">
       <div class="container">
         <header class="section-header">
-          <p class="eyebrow">Passo a passo guiado</p>
-          <h2 id="tutoriais-heading">Tutoriais práticos no Power Automate</h2>
-          <p>Escolha um dos tutoriais abaixo. Ambos foram pensados para quem está começando e utilizam uma <strong>conta institucional Microsoft 365</strong>.</p>
+          <p class="eyebrow">Passo a passo guiado · Estudantes</p>
+          <h2 id="tutoriais-heading">Tutoriais práticos para a universidade</h2>
+          <p>Escolha um dos três tutoriais abaixo. Todos foram desenhados para estudantes iniciantes utilizando uma <strong>conta institucional Microsoft 365</strong>.</p>
         </header>
 
         <div class="tutorial-picker" style="margin-bottom:var(--space-7)">
           <a class="card" href="#tutorial-01" style="text-decoration:none">
             <p class="tutorial-card__number">Tutorial 01 · ≈ 15 min</p>
-            <h3>Enviar um aviso quando chegar um e-mail importante</h3>
-            <p>Identifique mensagens importantes na caixa de entrada e receba um aviso automático por e-mail (ou no Teams).</p>
+            <h3>Salvar no Microsoft To Do os trabalhos que chegam no Teams</h3>
+            <p>Crie automaticamente uma tarefa no To Do sempre que um novo aviso de trabalho for postado no canal da turma.</p>
           </a>
           <a class="card" href="#tutorial-02" style="text-decoration:none">
             <p class="tutorial-card__number">Tutorial 02 · ≈ 20 min</p>
-            <h3>Salvar anexos automaticamente no OneDrive</h3>
-            <p>Guarde arquivos recebidos por e-mail diretamente em uma pasta do seu OneDrive for Business.</p>
+            <h3>Salvar em uma pasta no OneDrive os materiais de aula</h3>
+            <p>Copie automaticamente os arquivos publicados na equipe da disciplina no Teams para uma pasta no seu OneDrive.</p>
+          </a>
+          <a class="card" href="#tutorial-03" style="text-decoration:none">
+            <p class="tutorial-card__number">Tutorial 03 · ≈ 20 min</p>
+            <h3>Agendar no calendário os trabalhos do Teams com prazo</h3>
+            <p>Clique nos três pontinhos de qualquer mensagem no Teams, informe a data de entrega e agende no Calendário.</p>
           </a>
         </div>
 
@@ -182,25 +185,34 @@
           <aside>
             <nav class="tutorial-toc" aria-label="Etapas dos tutoriais">
               <div class="tutorial-toc__group" data-toc-for="tutorial-01">
-                <p class="tutorial-toc__title">Tutorial 01 — Aviso de e-mail</p>
+                <p class="tutorial-toc__title">Tutorial 01 — Teams → To Do</p>
                 <ol>
-                  <li><a href="#pa01-passo-1">Acessar o Power Automate</a></li>
+                  <li><a href="#pa01-passo-1">Criar lista no Microsoft To Do</a></li>
                   <li><a href="#pa01-passo-2">Criar fluxo automatizado</a></li>
-                  <li><a href="#pa01-passo-3">Escolher o gatilho de e-mail</a></li>
-                  <li><a href="#pa01-passo-4">Configurar filtros do gatilho</a></li>
-                  <li><a href="#pa01-passo-5">Adicionar ação de aviso</a></li>
-                  <li><a href="#pa01-passo-6">Salvar e testar o fluxo</a></li>
+                  <li><a href="#pa01-passo-3">Configurar gatilho do Teams</a></li>
+                  <li><a href="#pa01-passo-4">Adicionar tarefa no To Do</a></li>
+                  <li><a href="#pa01-passo-5">Salvar e testar o fluxo</a></li>
                 </ol>
               </div>
               <div class="tutorial-toc__group" data-toc-for="tutorial-02">
-                <p class="tutorial-toc__title">Tutorial 02 — Salvar anexos</p>
+                <p class="tutorial-toc__title">Tutorial 02 — Materiais no OneDrive</p>
                 <ol>
-                  <li><a href="#pa02-passo-1">Preparar pasta no OneDrive</a></li>
-                  <li><a href="#pa02-passo-2">Criar o fluxo automatizado</a></li>
-                  <li><a href="#pa02-passo-3">Configurar gatilho com anexos</a></li>
-                  <li><a href="#pa02-passo-4">Adicionar ação Criar arquivo</a></li>
-                  <li><a href="#pa02-passo-5">Entender o bloco Aplicar a cada</a></li>
+                  <li><a href="#pa02-passo-1">Criar pasta de estudos no OneDrive</a></li>
+                  <li><a href="#pa02-passo-2">Criar fluxo com gatilho SharePoint</a></li>
+                  <li><a href="#pa02-passo-3">Selecionar a turma e biblioteca</a></li>
+                  <li><a href="#pa02-passo-4">Obter o conteúdo do arquivo</a></li>
+                  <li><a href="#pa02-passo-5">Criar o arquivo no OneDrive</a></li>
                   <li><a href="#pa02-passo-6">Salvar e testar o fluxo</a></li>
+                </ol>
+              </div>
+              <div class="tutorial-toc__group" data-toc-for="tutorial-03">
+                <p class="tutorial-toc__title">Tutorial 03 — Prazo no Calendário</p>
+                <ol>
+                  <li><a href="#pa03-passo-1">Criar fluxo instantâneo</a></li>
+                  <li><a href="#pa03-passo-2">Configurar campos de prazo</a></li>
+                  <li><a href="#pa03-passo-3">Adicionar ação Criar evento (V4)</a></li>
+                  <li><a href="#pa03-passo-4">Preencher data e título</a></li>
+                  <li><a href="#pa03-passo-5">Salvar e usar dentro do Teams</a></li>
                 </ol>
               </div>
             </nav>
@@ -208,26 +220,26 @@
 
           <div>
             <!-- ============================================================
-                 TUTORIAL 01
+                 TUTORIAL 01 — Trabalhos do Teams no Microsoft To Do
                  ============================================================ -->
             <article class="tutorial" id="tutorial-01" data-tutorial aria-labelledby="t01-titulo">
               <header class="tutorial__header">
                 <p class="eyebrow">Power Automate · Tutorial 01</p>
-                <h2 id="t01-titulo">Enviar uma notificação quando chegar um e-mail</h2>
+                <h2 id="t01-titulo">Salvar no Microsoft To Do os trabalhos que chegam no Teams</h2>
                 <ul class="badge-list">
                   <li class="badge">Nível: Iniciante</li>
                   <li class="badge badge--gray">Tempo estimado: 15 minutos</li>
-                  <li class="badge badge--purple">Conta institucional Microsoft 365</li>
+                  <li class="badge badge--purple">Microsoft Teams + Microsoft To Do</li>
                 </ul>
                 <div class="verify-note">
                   <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
-                  <span>Passos conferidos na documentação oficial do Microsoft Learn (nov/2026). Os nomes de botões e menus podem variar ligeiramente conforme atualizações da plataforma ou idioma da sua conta.</span>
+                  <span>Passos conferidos na documentação oficial do Microsoft Learn (nov/2026). Os nomes dos botões podem variar ligeiramente conforme a versão do designer ou o idioma da sua conta.</span>
                 </div>
               </header>
 
               <!-- Barra de progresso do tutorial -->
               <div class="tutorial-status" data-tutorial-status>
-                <span class="tutorial-status__label">Passo <span data-current-step>1</span> de 6 <span class="long">· Progresso</span></span>
+                <span class="tutorial-status__label">Passo <span data-current-step>1</span> de 5 <span class="long">· Progresso</span></span>
                 <div class="tutorial-status__track" role="progressbar" aria-label="Progresso de leitura do Tutorial 01" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
                   <div class="tutorial-status__fill"></div>
                 </div>
@@ -235,21 +247,20 @@
               </div>
 
               <div class="tutorial__body">
-                <!-- Ficha resumo: problema, objetivo, pré-requisitos, materiais -->
                 <dl class="tutorial-summary">
                   <div class="summary--problem">
                     <dt>
                       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
                       Problema cotidiano
                     </dt>
-                    <dd>Você recebe muitos e-mails ao longo do dia e corre o risco de não perceber rapidamente quando chega uma mensagem importante (por exemplo, um comunicado da coordenação ou um chamado urgente).</dd>
+                    <dd>Os professores publicam avisos de trabalhos e atividades nos canais das disciplinas no Microsoft Teams, e é fácil perder o controle do que precisa ser feito quando há várias matérias ao mesmo tempo.</dd>
                   </div>
                   <div class="summary--goal">
                     <dt>
                       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
                       Objetivo
                     </dt>
-                    <dd>Criar um fluxo automatizado que identifica a chegada de um e-mail com determinado assunto e envia automaticamente um aviso destacado para você.</dd>
+                    <dd>Criar um fluxo que monitora o canal da disciplina no Teams e adiciona automaticamente cada novo aviso como uma tarefa na sua lista do <strong>Microsoft To Do</strong>.</dd>
                   </div>
                   <div>
                     <dt>
@@ -258,8 +269,8 @@
                     </dt>
                     <dd>
                       <ul>
-                        <li>Ter uma conta institucional com acesso ao <strong>Power Automate</strong> e ao <strong>Outlook (Office 365)</strong>.</li>
-                        <li>Não é necessário saber programar.</li>
+                        <li>Conta institucional Microsoft 365 com acesso ao <strong>Power Automate</strong>, <strong>Microsoft Teams</strong> e <strong>Microsoft To Do</strong>.</li>
+                        <li>Participar de uma equipe de disciplina no Teams.</li>
                       </ul>
                     </dd>
                   </div>
@@ -270,8 +281,8 @@
                     </dt>
                     <dd>
                       <ul>
-                        <li>Computador ou notebook com navegador atualizado (Edge, Chrome ou Firefox).</li>
-                        <li>Conexão com a internet.</li>
+                        <li>Uma lista criada no Microsoft To Do (ex.: <code>Trabalhos da Faculdade</code>).</li>
+                        <li>Navegador web atualizado.</li>
                       </ul>
                     </dd>
                   </div>
@@ -280,207 +291,172 @@
                 <div class="callout callout--info">
                   <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
                   <div>
-                    <p class="callout__title">Por que usamos aviso por e-mail (ou Teams) em vez do app móvel?</p>
-                    <p>A Microsoft <strong>descontinuou o aplicativo móvel do Power Automate em 31 de agosto de 2026</strong>. Por isso, a recomendação oficial atual é enviar notificações por <strong>e-mail</strong> (como faremos abaixo) ou pelo <strong>Microsoft Teams</strong>.</p>
+                    <p class="callout__title">Lista de tarefas no To Do × Planilha no Excel</p>
+                    <p>O <strong>Microsoft To Do</strong> organiza suas atividades em <strong>listas de tarefas</strong> (onde você pode marcar cada trabalho como concluído). Quando um professor cria uma atividade na aba <em>Tarefas (Assignments)</em> do Teams, o próprio Teams também publica automaticamente um aviso no canal <strong>Geral</strong> da turma — e é essa postagem no canal que nosso fluxo captura! Se você preferir salvar em uma planilha do Excel, basta trocar a ação final por <span class="ui-label">Adicionar uma linha em uma tabela</span> do conector <strong>Excel Online (Business)</strong>.</p>
                   </div>
                 </div>
 
-                <!-- Passo a passo numerado -->
                 <ol class="steps">
                   <li class="step" id="pa01-passo-1">
-                    <h3 class="step__title"><small>Passo 1 de 6</small>Acesse a plataforma Power Automate</h3>
+                    <h3 class="step__title"><small>Passo 1 de 5</small>Prepare sua lista no Microsoft To Do</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Abra o navegador e acesse <a href="https://make.powerautomate.com/">make.powerautomate.com</a>.</li>
-                        <li>Entre com seu e-mail e senha institucionais.</li>
-                        <li>Aguarde carregar a página inicial do Power Automate, onde fica o menu lateral esquerdo.</li>
+                        <li>Acesse <a href="https://to-do.office.com/">to-do.office.com</a> e entre com sua conta institucional da universidade.</li>
+                        <li>No menu lateral esquerdo, clique em <span class="ui-label">+ Nova lista <span class="ui-label__en">(New list)</span></span>, digite <code>Trabalhos da Faculdade</code> e pressione Enter.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da página inicial do Power Automate">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da lista Trabalhos da Faculdade criada no Microsoft To Do">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Tela inicial do Power Automate com o menu lateral esquerdo visível.</span>
+                            <span>Lista “Trabalhos da Faculdade” criada no Microsoft To Do.</span>
                             <code>assets/screenshots/pa-t01-passo-01.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 1.1</b> — Página inicial do Power Automate após entrar com a conta institucional.</figcaption>
+                        <figcaption><b>Figura 1.1</b> — Criação da lista “Trabalhos da Faculdade” no Microsoft To Do.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa01-passo-2">
-                    <h3 class="step__title"><small>Passo 2 de 6</small>Inicie a criação de um fluxo automatizado</h3>
+                    <h3 class="step__title"><small>Passo 2 de 5</small>Crie um fluxo da nuvem automatizado</h3>
                     <div class="step__content">
                       <ol>
-                        <li>No menu lateral esquerdo, clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span>.</li>
-                        <li>Selecione a opção <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>. Essa opção cria um fluxo que inicia sozinho quando um evento acontece.</li>
+                        <li>Abra <a href="https://make.powerautomate.com/">make.powerautomate.com</a> e clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> no menu esquerdo.</li>
+                        <li>Escolha <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>.</li>
+                        <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Salvar trabalhos do Teams no To Do</code>.</li>
+                        <li>No campo de busca de gatilhos, digite <code> nova mensagem de canal</code> e selecione <span class="ui-label">Quando uma nova mensagem de canal é adicionada <span class="ui-label__en">(When a new channel message is added)</span></span> do conector <strong>Microsoft Teams</strong>.</li>
+                        <li>Clique em <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da opção Fluxo da nuvem automatizado">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da escolha do gatilho Quando uma nova mensagem de canal é adicionada">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Tela “Criar” destacando o cartão “Fluxo da nuvem automatizado”.</span>
+                            <span>Janela de criação com o gatilho “Quando uma nova mensagem de canal é adicionada” (Microsoft Teams).</span>
                             <code>assets/screenshots/pa-t01-passo-02.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 1.2</b> — Seleção do tipo “Fluxo da nuvem automatizado”.</figcaption>
+                        <figcaption><b>Figura 1.2</b> — Seleção do gatilho de nova mensagem de canal do Microsoft Teams.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa01-passo-3">
-                    <h3 class="step__title"><small>Passo 3 de 6</small>Dê um nome ao fluxo e escolha o gatilho</h3>
+                    <h3 class="step__title"><small>Passo 3 de 5</small>Escolha a equipe e o canal da disciplina</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Na janela que se abrir, no campo <span class="ui-label">Nome do fluxo <span class="ui-label__en">(Flow name)</span></span>, digite um nome fácil de identificar, como: <code>Aviso de e-mail importante</code>.</li>
-                        <li>No campo de busca <span class="ui-label">Escolha o gatilho do fluxo <span class="ui-label__en">(Choose your flow's trigger)</span></span>, pesquise por <code>Quando um novo email chegar</code>.</li>
-                        <li>Selecione <span class="ui-label">Quando um novo email chegar (V3) <span class="ui-label__en">(When a new email arrives (V3))</span></span> do conector <strong>Office 365 Outlook</strong>.</li>
-                        <li>Clique no botão <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
+                        <li>Clique no bloco do gatilho <span class="ui-label">Quando uma nova mensagem de canal é adicionada</span>.</li>
+                        <li>Preencha os dois campos selecionando a turma que você quer acompanhar:</li>
                       </ol>
+                      <dl class="config-list">
+                        <div><dt>Equipe (Team)</dt><dd>Selecione a equipe da disciplina (ex.: <code>Engenharia de Software — Turma A</code>).</dd></div>
+                        <div><dt>Canal (Channel)</dt><dd>Selecione o canal onde os trabalhos e avisos são postados (geralmente <code>Geral</code> / <em>General</em>).</dd></div>
+                      </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da escolha do gatilho Quando um novo email chegar (V3)">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da seleção da Equipe e do Canal no gatilho do Teams">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Janela de criação com o nome do fluxo preenchido e o gatilho “Quando um novo email chegar (V3)” selecionado.</span>
+                            <span>Bloco do gatilho com a Equipe da disciplina e o Canal “Geral” selecionados.</span>
                             <code>assets/screenshots/pa-t01-passo-03.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 1.3</b> — Escolha do gatilho do conector Office 365 Outlook.</figcaption>
+                        <figcaption><b>Figura 1.3</b> — Configuração da equipe e do canal da disciplina no Teams.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa01-passo-4">
-                    <h3 class="step__title"><small>Passo 4 de 6</small>Configure o filtro do gatilho</h3>
+                    <h3 class="step__title"><small>Passo 4 de 5</small>Adicione a ação para criar a tarefa no Microsoft To Do</h3>
                     <div class="step__content">
-                      <p>Para não receber aviso de todo e qualquer e-mail, vamos filtrar apenas as mensagens que tenham uma palavra-chave no assunto (por exemplo, <code>[IMPORTANTE]</code>).</p>
                       <ol>
-                        <li>Clique sobre o bloco <span class="ui-label">Quando um novo email chegar (V3)</span> para abrir as opções.</li>
-                        <li>Se necessário, clique em <span class="ui-label">Mostrar parâmetros avançados <span class="ui-label__en">(Show advanced options / Show all)</span></span>.</li>
-                        <li>Preencha os campos conforme a tabela abaixo:</li>
+                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span> abaixo do gatilho.</li>
+                        <li>Pesquise por <code>Microsoft To-Do (Business)</code> e selecione a ação <span class="ui-label">Adicionar uma tarefa (V3) <span class="ui-label__en">(Add a to-do (V3))</span></span>.</li>
+                        <li>Configure os campos da tarefa usando o painel de <strong>conteúdo dinâmico</strong>:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Pasta (Folder)</dt><dd><code>Caixa de Entrada</code> (Inbox)</dd></div>
-                        <div><dt>Filtro de Assunto (Subject Filter)</dt><dd><code>[IMPORTANTE]</code> (ou outra palavra que você queira monitorar)</dd></div>
+                        <div><dt>Lista de tarefas (To-do List)</dt><dd>Selecione a lista <code>Trabalhos da Faculdade</code> criada no Passo 1.</dd></div>
+                        <div><dt>Assunto (Subject)</dt><dd>Digite <code>[Teams] </code> seguido do conteúdo dinâmico <strong>Assunto da mensagem (Message subject)</strong> ou <strong>Conteúdo da mensagem em texto simples (Message body plain text)</strong>.</dd></div>
+                        <div><dt>Conteúdo do Corpo (Body Content)</dt><dd>Em parâmetros avançados, selecione <strong>Conteúdo da mensagem (Message body content)</strong> e o <strong>Link para a mensagem (Link to message)</strong> para poder abrir o aviso original no Teams com um clique.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela dos parâmetros do gatilho de e-mail">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Adicionar uma tarefa (V3) do Microsoft To-Do">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Bloco do gatilho aberto mostrando “Pasta: Caixa de Entrada” e “Filtro de Assunto: [IMPORTANTE]”.</span>
+                            <span>Ação “Adicionar uma tarefa (V3)” configurada com a lista “Trabalhos da Faculdade”.</span>
                             <code>assets/screenshots/pa-t01-passo-04.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 1.4</b> — Filtro configurado para disparar apenas quando o assunto contiver “[IMPORTANTE]”.</figcaption>
+                        <figcaption><b>Figura 1.4</b> — Configuração da ação “Adicionar uma tarefa (V3)” no Microsoft To Do.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa01-passo-5">
-                    <h3 class="step__title"><small>Passo 5 de 6</small>Configure a ação de notificação</h3>
+                    <h3 class="step__title"><small>Passo 5 de 5</small>Salve e teste o fluxo</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Abaixo do gatilho, clique no botão <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span> (ou no ícone <span class="ui-label">+</span> no designer novo).</li>
-                        <li>Na caixa de busca, digite <code>Enviar um email (V2)</code> e selecione a ação <span class="ui-label">Enviar um email (V2) <span class="ui-label__en">(Send an email (V2))</span></span> do <strong>Office 365 Outlook</strong>.</li>
-                        <li>Configure os campos da ação usando o botão de <strong>conteúdo dinâmico</strong> (ícone de raio) para puxar os dados do e-mail recebido:</li>
+                        <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no topo da página.</li>
+                        <li>Clique em <span class="ui-label">Testar <span class="ui-label__en">(Test)</span></span> → <span class="ui-label">Manualmente <span class="ui-label__en">(Manually)</span></span> → <span class="ui-label">Testar</span>.</li>
+                        <li>Publique uma mensagem de teste em um canal de equipe de estudos (ou aguarde uma nova publicação no canal configurado).</li>
+                        <li>Abra o <strong>Microsoft To Do</strong> e verifique a nova tarefa criada na lista <code>Trabalhos da Faculdade</code>.</li>
                       </ol>
-                      <dl class="config-list">
-                        <div><dt>Para (To)</dt><dd>Digite o seu próprio endereço de e-mail institucional (ex.: <code>aluno.exemplo@universidade.edu.br</code>).</dd></div>
-                        <div><dt>Assunto (Subject)</dt><dd>Digite <code>🔔 Aviso: </code> e insira o conteúdo dinâmico <strong>Assunto (Subject)</strong> do gatilho.</dd></div>
-                        <div><dt>Corpo (Body)</dt><dd>Escreva um resumo curto, por exemplo: <code>Você recebeu uma mensagem importante de </code> + conteúdo dinâmico <strong>De (From)</strong> + <code> com o assunto </code> + <strong>Assunto (Subject)</strong>.</dd></div>
-                      </dl>
-                      <p><strong>Alternativa no Microsoft Teams:</strong> se preferir receber o aviso no chat do Teams, escolha a ação <span class="ui-label">Postar mensagem em um chat ou canal <span class="ui-label__en">(Post message in a chat or channel)</span></span> do conector <strong>Microsoft Teams</strong>.</p>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Enviar um email (V2)">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da tarefa criada na lista Trabalhos da Faculdade no Microsoft To Do">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Ação “Enviar um email (V2)” preenchida com conteúdo dinâmico (De e Assunto).</span>
+                            <span>Tarefa criada automaticamente dentro da lista “Trabalhos da Faculdade” no Microsoft To Do.</span>
                             <code>assets/screenshots/pa-t01-passo-05.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 1.5</b> — Configuração da ação de aviso com campos dinâmicos.</figcaption>
-                      </figure>
-                    </div>
-                  </li>
-
-                  <li class="step" id="pa01-passo-6">
-                    <h3 class="step__title"><small>Passo 6 de 6</small>Salve e teste o fluxo</h3>
-                    <div class="step__content">
-                      <ol>
-                        <li>No canto superior da tela, clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> e aguarde a mensagem de confirmação.</li>
-                        <li>Clique em <span class="ui-label">Testar <span class="ui-label__en">(Test)</span></span>, selecione <span class="ui-label">Manualmente <span class="ui-label__en">(Manually)</span></span> e confirme em <span class="ui-label">Testar</span>.</li>
-                        <li>Abra seu Outlook e envie um e-mail de teste para você mesmo com o assunto: <code>[IMPORTANTE] Teste do meu primeiro fluxo</code>.</li>
-                        <li>Volte para a aba do Power Automate e observe a confirmação de execução bem-sucedida.</li>
-                      </ol>
-                      <figure class="screenshot">
-                        <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do teste bem-sucedido do fluxo">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Fluxo exibindo o selo verde “Seu fluxo foi executado com êxito”.</span>
-                            <code>assets/screenshots/pa-t01-passo-06.webp</code>
-                          </div>
-                        </div>
-                        <figcaption><b>Figura 1.6</b> — Execução concluída com sucesso após o envio do e-mail de teste.</figcaption>
+                        <figcaption><b>Figura 1.5</b> — Tarefa adicionada automaticamente ao Microsoft To Do.</figcaption>
                       </figure>
                     </div>
                   </li>
                 </ol>
 
-                <!-- Resultado esperado -->
                 <section class="tutorial-section" data-tutorial-end aria-labelledby="t01-resultado">
                   <h3 id="t01-resultado">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
                     Resultado esperado
                   </h3>
                   <div class="result-box">
-                    <p>Em poucos instantes após o e-mail com <code>[IMPORTANTE]</code> chegar à sua caixa de entrada, você receberá automaticamente o aviso com o assunto <strong>“🔔 Aviso: [IMPORTANTE] Teste do meu primeiro fluxo”</strong>, indicando quem enviou a mensagem.</p>
+                    <p>Sempre que um trabalho ou aviso for publicado no canal monitorado do Teams, uma nova tarefa será criada automaticamente na sua lista <code>Trabalhos da Faculdade</code> no Microsoft To Do, com o texto e o link direto para a postagem original.</p>
                   </div>
                 </section>
 
-                <!-- Cuidados e limitações -->
                 <aside class="callout callout--warning" aria-label="Cuidados e limitações do Tutorial 01">
                   <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17h.01"/></svg>
                   <div>
-                    <p class="callout__title">Cuidados para evitar um “loop infinito”</p>
-                    <p>Se você enviar o e-mail de aviso <strong>para a sua própria Caixa de Entrada</strong> e o assunto do aviso também contiver o texto exato do filtro (<code>[IMPORTANTE]</code>), o próprio aviso poderá disparar o fluxo novamente! Para evitar isso, use uma palavra diferente no assunto do aviso, envie o aviso pelo <strong>Teams</strong>, ou preencha o campo <strong>De (From)</strong> no gatilho para monitorar apenas um remetente específico.</p>
-                  </div>
-                </aside>
-
-                <aside class="callout callout--privacy" aria-label="Privacidade no Tutorial 01">
-                  <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-                  <div>
-                    <p class="callout__title">Cuidados com dados pessoais</p>
-                    <p>Não configure o fluxo para encaminhar automaticamente e-mails da instituição para contas pessoais externas. Além de poder violar normas internas e a LGPD, informações sensíveis sairiam do ambiente protegido da instituição.</p>
+                    <p class="callout__title">Dica para canais muito movimentados</p>
+                    <p>Se os alunos conversam bastante no mesmo canal em que o professor publica os trabalhos, toda mensagem viraria uma tarefa. Nesse caso, você pode adicionar uma <strong>Condição</strong> entre o gatilho e a ação para criar a tarefa apenas quando a mensagem contiver palavras como <code>Trabalho</code>, <code>Entrega</code> ou <code>Assignment</code> — ou usar o método de um clique que veremos no <a href="#tutorial-03">Tutorial 03</a>.</p>
                   </div>
                 </aside>
 
                 <section class="tutorial-section" aria-labelledby="t01-links">
                   <h3 id="t01-links">Materiais complementares oficiais</h3>
                   <ul>
-                    <li><a href="https://learn.microsoft.com/pt-br/power-automate/get-started-logic-flow">Criar um fluxo de nuvem no Power Automate (Microsoft Learn)</a></li>
-                    <li><a href="https://learn.microsoft.com/pt-br/power-automate/email-overview">Visão geral sobre como usar fluxos com e-mails (Microsoft Learn)</a></li>
+                    <li><a href="https://learn.microsoft.com/pt-br/connectors/teams/">Documentação do conector Microsoft Teams (Microsoft Learn)</a></li>
+                    <li><a href="https://learn.microsoft.com/pt-br/connectors/todo/">Documentação do conector Microsoft To-Do (Business) (Microsoft Learn)</a></li>
                   </ul>
                 </section>
               </div>
             </article>
 
             <!-- ============================================================
-                 TUTORIAL 02
+                 TUTORIAL 02 — Materiais de aula do Teams no OneDrive
                  ============================================================ -->
             <article class="tutorial" id="tutorial-02" data-tutorial aria-labelledby="t02-titulo">
               <header class="tutorial__header">
                 <p class="eyebrow">Power Automate · Tutorial 02</p>
-                <h2 id="t02-titulo">Salvar anexos automaticamente no OneDrive</h2>
+                <h2 id="t02-titulo">Salvar em uma pasta no OneDrive os materiais de aula</h2>
                 <ul class="badge-list">
                   <li class="badge">Nível: Iniciante</li>
                   <li class="badge badge--gray">Tempo estimado: 20 minutos</li>
-                  <li class="badge badge--purple">Conta institucional Microsoft 365</li>
+                  <li class="badge badge--purple">Teams (SharePoint) + OneDrive</li>
                 </ul>
                 <div class="verify-note">
                   <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
@@ -498,21 +474,20 @@
               </div>
 
               <div class="tutorial__body">
-                <!-- Ficha resumo -->
                 <dl class="tutorial-summary">
                   <div class="summary--problem">
                     <dt>
                       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
                       Problema cotidiano
                     </dt>
-                    <dd>Você recebe relatórios, comprovantes ou atividades anexadas por e-mail e precisa abrir mensagem por mensagem para baixar e organizar cada arquivo.</dd>
+                    <dd>Ao longo do semestre, os professores sobem slides, PDFs e artigos na aba “Arquivos” da equipe da disciplina no Teams. Baixar cada material manualmente — ou perder o acesso quando a equipe é arquivada no fim do semestre — atrapalha seus estudos.</dd>
                   </div>
                   <div class="summary--goal">
                     <dt>
                       <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
                       Objetivo
                     </dt>
-                    <dd>Demonstrar como salvar automaticamente todos os anexos recebidos por e-mail dentro de uma pasta específica do seu OneDrive for Business.</dd>
+                    <dd>Criar um fluxo que copia automaticamente cada novo arquivo adicionado à equipe da disciplina no Teams para uma pasta organizada no seu <strong>OneDrive for Business</strong> pessoal.</dd>
                   </div>
                   <div>
                     <dt>
@@ -521,7 +496,7 @@
                     </dt>
                     <dd>
                       <ul>
-                        <li>Conta institucional Microsoft 365 com acesso ao <strong>Power Automate</strong>, <strong>Outlook</strong> e <strong>OneDrive for Business</strong>.</li>
+                        <li>Conta institucional Microsoft 365 com acesso ao <strong>Power Automate</strong>, <strong>Microsoft Teams</strong> e <strong>OneDrive for Business</strong>.</li>
                       </ul>
                     </dd>
                   </div>
@@ -532,129 +507,141 @@
                     </dt>
                     <dd>
                       <ul>
-                        <li>Uma pasta criada no seu OneDrive (ex.: <code>Anexos do E-mail</code>).</li>
-                        <li>Um arquivo fictício de teste (como um PDF ou imagem sem dados reais).</li>
+                        <li>Uma pasta criada no seu OneDrive (ex.: <code>Materiais de Aula</code>).</li>
                       </ul>
                     </dd>
                   </div>
                 </dl>
 
-                <!-- Passo a passo numerado -->
+                <div class="callout callout--info">
+                  <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+                  <div>
+                    <p class="callout__title">Segredo útil: os arquivos do Teams ficam no SharePoint!</p>
+                    <p>Nos bastidores, toda equipe do Microsoft Teams guarda os arquivos da aba <strong>Arquivos</strong> dentro de um site do <strong>SharePoint</strong> com o mesmo nome da turma. Por isso, usamos o gatilho do conector <strong>SharePoint</strong> para detectar quando o professor envia um novo material de aula.</p>
+                  </div>
+                </div>
+
                 <ol class="steps">
                   <li class="step" id="pa02-passo-1">
-                    <h3 class="step__title"><small>Passo 1 de 6</small>Prepare a pasta no OneDrive e acesse o Power Automate</h3>
+                    <h3 class="step__title"><small>Passo 1 de 6</small>Crie a pasta de destino no seu OneDrive</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Acesse seu <strong>OneDrive for Business</strong> e crie uma pasta vazia chamada <code>Anexos do E-mail</code>.</li>
-                        <li>Em outra aba, abra <a href="https://make.powerautomate.com/">make.powerautomate.com</a> com sua conta institucional.</li>
+                        <li>Acesse seu <strong>OneDrive for Business</strong> e crie uma pasta chamada <code>Materiais de Aula</code>.</li>
+                        <li>Em outra aba, abra <a href="https://make.powerautomate.com/">make.powerautomate.com</a>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da pasta criada no OneDrive">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da pasta Materiais de Aula criada no OneDrive">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Pasta “Anexos do E-mail” criada no OneDrive for Business.</span>
+                            <span>Pasta “Materiais de Aula” criada no OneDrive for Business do estudante.</span>
                             <code>assets/screenshots/pa-t02-passo-01.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.1</b> — Pasta de destino criada no OneDrive for Business.</figcaption>
+                        <figcaption><b>Figura 2.1</b> — Pasta “Materiais de Aula” pronta no OneDrive for Business.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa02-passo-2">
-                    <h3 class="step__title"><small>Passo 2 de 6</small>Crie o fluxo automatizado</h3>
+                    <h3 class="step__title"><small>Passo 2 de 6</small>Crie o fluxo com o gatilho do SharePoint</h3>
                     <div class="step__content">
                       <ol>
-                        <li>No menu lateral esquerdo do Power Automate, clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> e depois em <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>.</li>
-                        <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Salvar anexos no OneDrive</code>.</li>
-                        <li>Procure e selecione o gatilho <span class="ui-label">Quando um novo email chegar (V3) <span class="ui-label__en">(When a new email arrives (V3))</span></span> do <strong>Office 365 Outlook</strong>.</li>
+                        <li>No Power Automate, clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> → <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>.</li>
+                        <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Salvar materiais de aula no OneDrive</code>.</li>
+                        <li>Pesquise por <code>Quando um arquivo é criado</code> e selecione <span class="ui-label">Quando um arquivo é criado (somente propriedades) <span class="ui-label__en">(When a file is created (properties only))</span></span> do conector <strong>SharePoint</strong>.</li>
                         <li>Clique em <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da criação do fluxo Salvar anexos no OneDrive">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do gatilho Quando um arquivo é criado (somente propriedades)">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Janela de criação do fluxo “Salvar anexos no OneDrive”.</span>
+                            <span>Seleção do gatilho “Quando um arquivo é criado (somente propriedades)” (SharePoint).</span>
                             <code>assets/screenshots/pa-t02-passo-02.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.2</b> — Criação do fluxo com o gatilho de recebimento de e-mail.</figcaption>
+                        <figcaption><b>Figura 2.2</b> — Criação do fluxo com o gatilho de novo arquivo no SharePoint.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa02-passo-3">
-                    <h3 class="step__title"><small>Passo 3 de 6</small>Configure o gatilho para incluir os anexos</h3>
+                    <h3 class="step__title"><small>Passo 3 de 6</small>Selecione o site da turma e a biblioteca de arquivos</h3>
                     <div class="step__content">
-                      <p>Este passo é essencial: por padrão, o gatilho de e-mail não baixa o conteúdo dos anexos para economizar recursos. Precisamos ativar duas opções.</p>
                       <ol>
-                        <li>Clique no bloco <span class="ui-label">Quando um novo email chegar (V3)</span> e abra os parâmetros avançados.</li>
-                        <li>Configure os campos exatamente assim:</li>
+                        <li>Clique no bloco <span class="ui-label">Quando um arquivo é criado (somente propriedades)</span>.</li>
+                        <li>Configure os campos:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Pasta (Folder)</dt><dd><code>Caixa de Entrada</code> (Inbox)</dd></div>
-                        <div><dt>Incluir Anexos (Include Attachments)</dt><dd><strong>Sim (Yes)</strong> — faz o fluxo trazer os arquivos junto com o e-mail.</dd></div>
-                        <div><dt>Somente com Anexos (Only with Attachments)</dt><dd><strong>Sim (Yes)</strong> — faz o fluxo rodar apenas quando o e-mail realmente tiver arquivos anexados.</dd></div>
-                        <div><dt>Filtro de Assunto (opcional)</dt><dd>Você pode preencher, por exemplo, <code>Relatório</code> se quiser salvar anexos apenas de e-mails com essa palavra no assunto.</dd></div>
+                        <div><dt>Endereço do Site (Site Address)</dt><dd>Selecione na lista o nome da sua equipe do Teams (ex.: <code>Engenharia de Software — Turma A</code>).</dd></div>
+                        <div><dt>Nome da Biblioteca (Library Name)</dt><dd>Selecione <code>Documentos</code> (<em>Documents</em>) ou <code>Materiais de Aula</code>, caso sua turma use a biblioteca específica de materiais.</dd></div>
+                        <div><dt>Pasta (Folder — opcional)</dt><dd>Se quiser monitorar apenas um canal (como <code>/General</code>), clique no ícone de pasta e escolha-o.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela das opções Incluir Anexos e Somente com Anexos marcadas como Sim">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do gatilho SharePoint configurado com a turma e a biblioteca Documentos">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Gatilho configurado com “Incluir Anexos: Sim” e “Somente com Anexos: Sim”.</span>
+                            <span>Gatilho configurado com o Endereço do Site da disciplina e a Biblioteca “Documentos”.</span>
                             <code>assets/screenshots/pa-t02-passo-03.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.3</b> — Ativação das opções “Incluir Anexos” e “Somente com Anexos”.</figcaption>
+                        <figcaption><b>Figura 2.3</b> — Escolha da turma e da biblioteca de documentos.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa02-passo-4">
-                    <h3 class="step__title"><small>Passo 4 de 6</small>Adicione a ação para salvar o arquivo no OneDrive</h3>
+                    <h3 class="step__title"><small>Passo 4 de 6</small>Adicione a ação “Obter conteúdo do arquivo”</h3>
                     <div class="step__content">
+                      <p>Como o gatilho traz apenas as informações do arquivo (nome e local), precisamos de uma etapa rápida para buscar o conteúdo do documento antes de salvá-lo no OneDrive.</p>
                       <ol>
                         <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span>.</li>
-                        <li>Pesquise por <code>OneDrive for Business</code> e escolha a ação <span class="ui-label">Criar arquivo <span class="ui-label__en">(Create file)</span></span>.</li>
-                        <li>Preencha os três campos da ação:</li>
+                        <li>Pesquise por <code>SharePoint</code> e escolha a ação <span class="ui-label">Obter conteúdo do arquivo <span class="ui-label__en">(Get file content)</span></span>.</li>
+                        <li>Preencha os dois campos:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Caminho da Pasta (Folder Path)</dt><dd>Clique no ícone de pasta à direita do campo e escolha a pasta <code>/Anexos do E-mail</code> criada no Passo 1.</dd></div>
-                        <div><dt>Nome do Arquivo (File Name)</dt><dd>No painel de conteúdo dinâmico, selecione <strong>Nome dos Anexos (Attachments Name)</strong>.</dd></div>
-                        <div><dt>Conteúdo do Arquivo (File Content)</dt><dd>No painel de conteúdo dinâmico, selecione <strong>Conteúdo dos Anexos (Attachments Content)</strong>.</dd></div>
+                        <div><dt>Endereço do Site (Site Address)</dt><dd>Selecione o mesmo site da equipe da disciplina escolhido no Passo 3.</dd></div>
+                        <div><dt>Identificador de Arquivo (File Identifier)</dt><dd>No painel de conteúdo dinâmico, selecione <strong>Identificador (Identifier)</strong> vindo do gatilho.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Criar arquivo do OneDrive for Business">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Obter conteúdo do arquivo do SharePoint">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Ação “Criar arquivo” com Caminho da Pasta, Nome dos Anexos e Conteúdo dos Anexos.</span>
+                            <span>Ação “Obter conteúdo do arquivo” com o campo “Identificador” dinâmico preenchido.</span>
                             <code>assets/screenshots/pa-t02-passo-04.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.4</b> — Preenchimento da ação “Criar arquivo” com os dados dinâmicos do anexo.</figcaption>
+                        <figcaption><b>Figura 2.4</b> — Ação “Obter conteúdo do arquivo” configurada com o Identificador dinâmico.</figcaption>
                       </figure>
                     </div>
                   </li>
 
                   <li class="step" id="pa02-passo-5">
-                    <h3 class="step__title"><small>Passo 5 de 6</small>Entenda o bloco “Aplicar a cada” criado automaticamente</h3>
+                    <h3 class="step__title"><small>Passo 5 de 6</small>Adicione a ação para criar o arquivo no OneDrive</h3>
                     <div class="step__content">
-                      <p>Assim que você seleciona <em>Nome dos Anexos</em>, o Power Automate coloca automaticamente a ação <strong>Criar arquivo</strong> dentro de uma caixa chamada <span class="ui-label">Aplicar a cada <span class="ui-label__en">(Apply to each / For each)</span></span>.</p>
-                      <p><strong>Não se assuste: isso é normal!</strong> Como um único e-mail pode trazer dois, três ou mais arquivos anexados, esse bloco garante que a ação de salvar seja repetida <strong>para cada anexo</strong> encontrado na mensagem. Você não precisa alterar nada nele.</p>
+                      <ol>
+                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span>.</li>
+                        <li>Pesquise por <code>OneDrive for Business</code> e escolha a ação <span class="ui-label">Criar arquivo <span class="ui-label__en">(Create file)</span></span>.</li>
+                        <li>Configure os três campos:</li>
+                      </ol>
+                      <dl class="config-list">
+                        <div><dt>Caminho da Pasta (Folder Path)</dt><dd>Clique no ícone de pasta e escolha <code>/Materiais de Aula</code> (criada no Passo 1).</dd></div>
+                        <div><dt>Nome do Arquivo (File Name)</dt><dd>No conteúdo dinâmico do gatilho, selecione <strong>Nome de arquivo com extensão (File name with extension)</strong>.</dd></div>
+                        <div><dt>Conteúdo do Arquivo (File Content)</dt><dd>No conteúdo dinâmico da etapa anterior (<em>Obter conteúdo do arquivo</em>), selecione <strong>Conteúdo do arquivo (File Content)</strong>.</dd></div>
+                      </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do bloco Aplicar a cada envolvendo a ação Criar arquivo">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Criar arquivo no OneDrive for Business">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Bloco “Aplicar a cada” envolvendo automaticamente a ação “Criar arquivo”.</span>
+                            <span>Ação “Criar arquivo” preenchida com Caminho da Pasta, Nome de arquivo com extensão e Conteúdo do arquivo.</span>
                             <code>assets/screenshots/pa-t02-passo-05.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.5</b> — Bloco de repetição “Aplicar a cada” gerado automaticamente pelo Power Automate.</figcaption>
+                        <figcaption><b>Figura 2.5</b> — Configuração da ação “Criar arquivo” no OneDrive for Business.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -665,44 +652,41 @@
                       <ol>
                         <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no topo da página.</li>
                         <li>Clique em <span class="ui-label">Testar <span class="ui-label__en">(Test)</span></span> → <span class="ui-label">Manualmente <span class="ui-label__en">(Manually)</span></span> → <span class="ui-label">Testar</span>.</li>
-                        <li>Envie para você mesmo um e-mail com um arquivo fictício anexado (por exemplo, <code>relatorio-exemplo.pdf</code>).</li>
-                        <li>Aguarde a execução do fluxo terminar e abra a pasta <code>Anexos do E-mail</code> no seu OneDrive.</li>
+                        <li>Envie um arquivo de teste (ex.: <code>aula-01-slides.pdf</code>) na aba <strong>Arquivos</strong> da equipe de testes no Teams.</li>
+                        <li>Abra a pasta <code>Materiais de Aula</code> no seu OneDrive e confira a cópia salva automaticamente.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do arquivo salvo na pasta do OneDrive">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do material de aula salvo automaticamente no OneDrive">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
                             <strong>Captura de tela pendente</strong>
-                            <span>Pasta “Anexos do E-mail” no OneDrive exibindo o arquivo “relatorio-exemplo.pdf” salvo automaticamente.</span>
+                            <span>Arquivo “aula-01-slides.pdf” copiado automaticamente para a pasta “Materiais de Aula” no OneDrive.</span>
                             <code>assets/screenshots/pa-t02-passo-06.webp</code>
                           </div>
                         </div>
-                        <figcaption><b>Figura 2.6</b> — Anexo salvo automaticamente na pasta do OneDrive após o teste.</figcaption>
+                        <figcaption><b>Figura 2.6</b> — Material de aula salvo na pasta pessoal do OneDrive.</figcaption>
                       </figure>
                     </div>
                   </li>
                 </ol>
 
-                <!-- Resultado esperado -->
                 <section class="tutorial-section" data-tutorial-end aria-labelledby="t02-resultado">
                   <h3 id="t02-resultado">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
                     Resultado esperado
                   </h3>
                   <div class="result-box">
-                    <p>Sempre que um novo e-mail com anexo chegar à sua Caixa de Entrada, todos os arquivos anexados aparecerão automaticamente dentro da pasta <code>Anexos do E-mail</code> no seu OneDrive for Business, sem que você precise baixá-los manualmente.</p>
+                    <p>Sempre que um novo slide, PDF ou material for adicionado à pasta de arquivos da turma no Teams, uma cópia será salva automaticamente na sua pasta <code>Materiais de Aula</code> no OneDrive for Business.</p>
                   </div>
                 </section>
 
-                <!-- Cuidados e limitações -->
                 <aside class="callout callout--warning" aria-label="Cuidados e limitações do Tutorial 02">
                   <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17h.01"/></svg>
                   <div>
-                    <p class="callout__title">Cuidados e limitações importantes</p>
+                    <p class="callout__title">Cuidados importantes</p>
                     <ul>
-                      <li><strong>Imagens da assinatura de e-mail:</strong> logotipos que vêm na assinatura do remetente também são tratados tecnicamente como anexos e podem ser salvos na pasta. Usar o <em>Filtro de Assunto</em> ou o campo <em>De</em> no gatilho ajuda a reduzir arquivos indesejados.</li>
-                      <li><strong>Arquivos com o mesmo nome:</strong> se chegarem dois anexos com exatamente o mesmo nome (ex.: <code>boleto.pdf</code>), o arquivo novo poderá sobrescrever o anterior na pasta.</li>
-                      <li><strong>Segurança:</strong> nunca abra arquivos suspeitos salvos automaticamente de remetentes desconhecidos.</li>
+                      <li><strong>Direitos autorais e uso acadêmico:</strong> os materiais disponibilizados pelos professores são para uso exclusivo de estudo. Não redistribua apostilas ou provas fora do ambiente acadêmico.</li>
+                      <li><strong>Espaço no OneDrive:</strong> vídeos de gravações de aulas costumam ser muito grandes e podem atingir o limite de tamanho de transferência do conector ou ocupar rapidamente seu espaço na nuvem. Prefira apontar o gatilho para a pasta onde ficam apenas slides e PDFs.</li>
                     </ul>
                   </div>
                 </aside>
@@ -710,17 +694,238 @@
                 <section class="tutorial-section" aria-labelledby="t02-links">
                   <h3 id="t02-links">Materiais complementares oficiais</h3>
                   <ul>
-                    <li><a href="https://learn.microsoft.com/pt-br/power-automate/email-Attachments">Personalizar fluxos para lidar com anexos de e-mail (Microsoft Learn)</a></li>
-                    <li><a href="https://learn.microsoft.com/pt-br/power-automate/use-apply-to-each">Usar o controle “Aplicar a cada” no Power Automate (Microsoft Learn)</a></li>
+                    <li><a href="https://learn.microsoft.com/pt-br/connectors/sharepointonline/">Documentação do conector SharePoint (Microsoft Learn)</a></li>
+                    <li><a href="https://learn.microsoft.com/pt-br/connectors/onedriveforbusiness/">Documentação do conector OneDrive for Business (Microsoft Learn)</a></li>
+                  </ul>
+                </section>
+              </div>
+            </article>
+
+            <!-- ============================================================
+                 TUTORIAL 03 — Agendar trabalhos do Teams no Calendário com prazo
+                 ============================================================ -->
+            <article class="tutorial" id="tutorial-03" data-tutorial aria-labelledby="t03-titulo">
+              <header class="tutorial__header">
+                <p class="eyebrow">Power Automate · Tutorial 03</p>
+                <h2 id="t03-titulo">Agendar no calendário os trabalhos do Teams com prazo</h2>
+                <ul class="badge-list">
+                  <li class="badge">Nível: Iniciante</li>
+                  <li class="badge badge--gray">Tempo estimado: 20 minutos</li>
+                  <li class="badge badge--purple">Microsoft Teams + Calendário do Outlook</li>
+                </ul>
+                <div class="verify-note">
+                  <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+                  <span>Passos conferidos na documentação oficial do Microsoft Learn (nov/2026). Confira os nomes dos botões conforme o idioma da sua conta.</span>
+                </div>
+              </header>
+
+              <!-- Barra de progresso do tutorial -->
+              <div class="tutorial-status" data-tutorial-status>
+                <span class="tutorial-status__label">Passo <span data-current-step>1</span> de 5 <span class="long">· Progresso</span></span>
+                <div class="tutorial-status__track" role="progressbar" aria-label="Progresso de leitura do Tutorial 03" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="tutorial-status__fill"></div>
+                </div>
+                <span class="tutorial-status__percent" aria-hidden="true">0%</span>
+              </div>
+
+              <div class="tutorial__body">
+                <dl class="tutorial-summary">
+                  <div class="summary--problem">
+                    <dt>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+                      Problema cotidiano
+                    </dt>
+                    <dd>O professor combina a data de entrega de um trabalho em uma mensagem no Teams, mas você esquece de abrir o calendário para anotar o prazo e acaba lembrando em cima da hora.</dd>
+                  </div>
+                  <div class="summary--goal">
+                    <dt>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+                      Objetivo
+                    </dt>
+                    <dd>Criar um botão rápido no menu de mensagens do Teams: ao clicar em qualquer mensagem de trabalho e escolher a data de entrega, o Power Automate agenda automaticamente o prazo no seu <strong>Calendário do Outlook</strong> (que também aparece no calendário do Teams).</dd>
+                  </div>
+                  <div>
+                    <dt>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+                      Pré-requisitos
+                    </dt>
+                    <dd>
+                      <ul>
+                        <li>Conta institucional Microsoft 365 com acesso ao <strong>Power Automate</strong>, <strong>Microsoft Teams</strong> e <strong>Outlook (Office 365)</strong>.</li>
+                      </ul>
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>
+                      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+                      Materiais necessários
+                    </dt>
+                    <dd>
+                      <ul>
+                        <li>Computador com navegador ou aplicativo Microsoft Teams aberto.</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+
+                <ol class="steps">
+                  <li class="step" id="pa03-passo-1">
+                    <h3 class="step__title"><small>Passo 1 de 5</small>Crie um fluxo instantâneo com o gatilho “Para uma mensagem selecionada”</h3>
+                    <div class="step__content">
+                      <ol>
+                        <li>Em <a href="https://make.powerautomate.com/">make.powerautomate.com</a>, clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> → <span class="ui-label">Fluxo da nuvem instantâneo <span class="ui-label__en">(Instant cloud flow)</span></span>.</li>
+                        <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Agendar trabalho no Calendário</code>.</li>
+                        <li>Na lista de gatilhos, selecione <span class="ui-label">Para uma mensagem selecionada <span class="ui-label__en">(For a selected message)</span></span> do conector <strong>Microsoft Teams</strong>.</li>
+                        <li>Clique em <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
+                      </ol>
+                      <figure class="screenshot">
+                        <div class="screenshot__frame">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da criação do fluxo instantâneo Para uma mensagem selecionada">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+                            <strong>Captura de tela pendente</strong>
+                            <span>Janela de criação de Fluxo da nuvem instantâneo com o gatilho “Para uma mensagem selecionada” (Teams).</span>
+                            <code>assets/screenshots/pa-t03-passo-01.webp</code>
+                          </div>
+                        </div>
+                        <figcaption><b>Figura 3.1</b> — Escolha do gatilho “Para uma mensagem selecionada” do Microsoft Teams.</figcaption>
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="step" id="pa03-passo-2">
+                    <h3 class="step__title"><small>Passo 2 de 5</small>Configure o cartão para pedir o nome do trabalho e a data do prazo</h3>
+                    <div class="step__content">
+                      <p>Como a mensagem do professor é um texto livre, vamos criar uma janelinha rápida que pergunta a você qual é o título do trabalho e a data de entrega na hora em que você acionar o fluxo.</p>
+                      <ol>
+                        <li>Clique no bloco <span class="ui-label">Para uma mensagem selecionada</span> e clique em <span class="ui-label">Criar Cartão Adaptável <span class="ui-label__en">(Create Adaptive Card)</span></span> (ou <span class="ui-label">+ Adicionar uma entrada <span class="ui-label__en">(+ Add an input)</span></span>, conforme a versão do designer).</li>
+                        <li>Adicione dois campos simples:
+                          <ul>
+                            <li>Campo 1 (Texto / <em>Text</em>): rótulo <code>Nome do trabalho</code>.</li>
+                            <li>Campo 2 (Data / <em>Date</em>): rótulo <code>Data de entrega</code>.</li>
+                          </ul>
+                        </li>
+                        <li>Salve o cartão para voltar ao fluxo.</li>
+                      </ol>
+                      <figure class="screenshot">
+                        <div class="screenshot__frame">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela dos campos Nome do trabalho e Data de entrega no gatilho do Teams">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+                            <strong>Captura de tela pendente</strong>
+                            <span>Gatilho configurado com as entradas “Nome do trabalho” e “Data de entrega”.</span>
+                            <code>assets/screenshots/pa-t03-passo-02.webp</code>
+                          </div>
+                        </div>
+                        <figcaption><b>Figura 3.2</b> — Campos de entrada para informar o título e a data de entrega do trabalho.</figcaption>
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="step" id="pa03-passo-3">
+                    <h3 class="step__title"><small>Passo 3 de 5</small>Adicione a ação “Criar evento (V4)” do Outlook</h3>
+                    <div class="step__content">
+                      <ol>
+                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span>.</li>
+                        <li>Pesquise por <code>Office 365 Outlook</code> e selecione a ação <span class="ui-label">Criar evento (V4) <span class="ui-label__en">(Create event (V4))</span></span>.</li>
+                      </ol>
+                      <figure class="screenshot">
+                        <div class="screenshot__frame">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da seleção da ação Criar evento (V4)">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+                            <strong>Captura de tela pendente</strong>
+                            <span>Seleção da ação “Criar evento (V4)” do conector Office 365 Outlook.</span>
+                            <code>assets/screenshots/pa-t03-passo-03.webp</code>
+                          </div>
+                        </div>
+                        <figcaption><b>Figura 3.3</b> — Ação “Criar evento (V4)” adicionada ao fluxo.</figcaption>
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="step" id="pa03-passo-4">
+                    <h3 class="step__title"><small>Passo 4 de 5</small>Preencha os dados do evento no calendário</h3>
+                    <div class="step__content">
+                      <ol>
+                        <li>No bloco <span class="ui-label">Criar evento (V4)</span>, preencha os campos obrigatórios e avançados:</li>
+                      </ol>
+                      <dl class="config-list">
+                        <div><dt>ID do calendário (Calendar id)</dt><dd>Selecione <code>Calendário</code> (<em>Calendar</em>).</dd></div>
+                        <div><dt>Assunto (Subject)</dt><dd>Digite <code>📌 Entrega: </code> e insira o conteúdo dinâmico <strong>Nome do trabalho</strong>.</dd></div>
+                        <div><dt>Hora de início (Start time)</dt><dd>Selecione o conteúdo dinâmico <strong>Data de entrega</strong>.</dd></div>
+                        <div><dt>Hora de término (End time)</dt><dd>Selecione novamente o conteúdo dinâmico <strong>Data de entrega</strong>.</dd></div>
+                        <div><dt>Fuso horário (Time zone)</dt><dd>Selecione <code>(UTC-03:00) Brasília</code>.</dd></div>
+                        <div><dt>É um evento de dia inteiro? (Is all day event?)</dt><dd>Em parâmetros avançados, marque <strong>Sim (Yes)</strong> para que o prazo fique destacado no topo do dia no seu calendário.</dd></div>
+                        <div><dt>Corpo (Body)</dt><dd>Insira o <strong>Conteúdo da mensagem em texto simples</strong> e o <strong>Link para a mensagem</strong> do Teams.</dd></div>
+                      </dl>
+                      <figure class="screenshot">
+                        <div class="screenshot__frame">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela dos campos da ação Criar evento (V4) preenchidos">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+                            <strong>Captura de tela pendente</strong>
+                            <span>Ação “Criar evento (V4)” preenchida com Calendário, Nome do trabalho, Data de entrega e Fuso horário de Brasília.</span>
+                            <code>assets/screenshots/pa-t03-passo-04.webp</code>
+                          </div>
+                        </div>
+                        <figcaption><b>Figura 3.4</b> — Preenchimento dos campos do evento no Calendário do Outlook.</figcaption>
+                      </figure>
+                    </div>
+                  </li>
+
+                  <li class="step" id="pa03-passo-5">
+                    <h3 class="step__title"><small>Passo 5 de 5</small>Salve e use o botão dentro do Microsoft Teams</h3>
+                    <div class="step__content">
+                      <ol>
+                        <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no Power Automate.</li>
+                        <li>Abra o <strong>Microsoft Teams</strong>, passe o mouse sobre qualquer mensagem de trabalho e clique nos três pontinhos <span class="ui-label">... (Mais opções)</span>.</li>
+                        <li>Vá em <span class="ui-label">Mais ações <span class="ui-label__en">(More actions)</span></span> e clique em <span class="ui-label">Agendar trabalho no Calendário</span>.</li>
+                        <li>Preencha o nome do trabalho e a data de entrega na janela que aparecer e clique em <strong>Enviar</strong>.</li>
+                      </ol>
+                      <figure class="screenshot">
+                        <div class="screenshot__frame">
+                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do menu Mais ações em uma mensagem do Teams e do evento criado no calendário">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
+                            <strong>Captura de tela pendente</strong>
+                            <span>Menu “Mais ações” na mensagem do Teams acionando o fluxo e o evento criado no Calendário.</span>
+                            <code>assets/screenshots/pa-t03-passo-05.webp</code>
+                          </div>
+                        </div>
+                        <figcaption><b>Figura 3.5</b> — Execução do fluxo diretamente pela mensagem no Teams e prazo agendado no Calendário.</figcaption>
+                      </figure>
+                    </div>
+                  </li>
+                </ol>
+
+                <section class="tutorial-section" data-tutorial-end aria-labelledby="t03-resultado">
+                  <h3 id="t03-resultado">
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+                    Resultado esperado
+                  </h3>
+                  <div class="result-box">
+                    <p>O trabalho aparecerá agendado na data escolhida tanto no seu <strong>Calendário do Outlook</strong> quanto na aba <strong>Calendário do Microsoft Teams</strong>, contendo as instruções da mensagem original e um lembrete automático.</p>
+                  </div>
+                </section>
+
+                <aside class="callout callout--info" aria-label="Dica extra do Tutorial 03">
+                  <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+                  <div>
+                    <p class="callout__title">Bônus: quer salvar no Calendário e no Microsoft To Do ao mesmo tempo?</p>
+                    <p>Você pode clicar em <span class="ui-label">+ Nova etapa</span> logo abaixo do <em>Criar evento (V4)</em> e adicionar também a ação <span class="ui-label">Adicionar uma tarefa (V3)</span> do <a href="#tutorial-01">Tutorial 01</a>, preenchendo o campo <strong>Data de Conclusão (Due Date)</strong> com a mesma <em>Data de entrega</em>! Assim, com um único clique no Teams, você agenda no calendário e cria a tarefa com prazo no To Do.</p>
+                  </div>
+                </aside>
+
+                <section class="tutorial-section" aria-labelledby="t03-links">
+                  <h3 id="t03-links">Materiais complementares oficiais</h3>
+                  <ul>
+                    <li><a href="https://learn.microsoft.com/pt-br/power-automate/trigger-flow-teams-message">Disparar um fluxo a partir de uma mensagem no Microsoft Teams (Microsoft Learn)</a></li>
+                    <li><a href="https://learn.microsoft.com/pt-br/connectors/office365/">Documentação do conector Office 365 Outlook (Microsoft Learn)</a></li>
                   </ul>
                 </section>
               </div>
             </article>
 
             <div class="cta" style="margin-top:var(--space-8)">
-              <h2>Hora de testar o que você aprendeu!</h2>
-              <p>Resolva os três desafios práticos e responda ao quiz interativo para fixar os conceitos.</p>
-              <a class="btn btn--light" href="desafios.html">Ir para os desafios e quiz</a>
+              <h2>Quer conhecer mais sobre a iniciativa?</h2>
+              <p>Saiba como este projeto de extensão universitária foi desenvolvido e acesse todas as referências oficiais.</p>
+              <a class="btn btn--light" href="sobre.html">Conhecer o projeto</a>
             </div>
           </div>
         </div>
@@ -751,16 +956,15 @@
             <li><a href="automacao.html">Entenda a automação</a></li>
             <li><a href="power-automate.html">Power Automate</a></li>
             <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
-            <li><a href="desafios.html">Desafios</a></li>
             <li><a href="sobre.html">Sobre o projeto</a></li>
           </ul>
         </nav>
         <nav aria-label="Rodapé — tutoriais">
           <p class="site-footer__title">Tutoriais</p>
           <ul>
-            <li><a href="power-automate.html#tutorial-01">Aviso de e-mail importante</a></li>
-            <li><a href="power-automate.html#tutorial-02">Salvar anexos no OneDrive</a></li>
-            <li><a href="desafios.html#quiz">Quiz final</a></li>
+            <li><a href="power-automate.html#tutorial-01">Trabalhos do Teams no To Do</a></li>
+            <li><a href="power-automate.html#tutorial-02">Materiais de aula no OneDrive</a></li>
+            <li><a href="power-automate.html#tutorial-03">Trabalhos no Calendário</a></li>
           </ul>
         </nav>
         <div>

@@ -44,7 +44,6 @@
           <li><a href="automacao.html">Entenda a automação</a></li>
           <li><a href="power-automate.html">Ferramenta</a></li>
           <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
-          <li><a href="desafios.html">Desafios</a></li>
           <li><a href="sobre.html">Sobre o projeto</a></li>
         </ul>
       </nav>
@@ -188,7 +187,7 @@
                 <p>Microsoft · Fluxos automatizados na nuvem</p>
               </div>
             </div>
-            <p style="margin-top:var(--space-5)">Ferramenta da Microsoft que permite criar fluxos automatizados conectando aplicativos e serviços, como Outlook, OneDrive, Teams, Excel e Forms.</p>
+            <p style="margin-top:var(--space-5)">Ferramenta da Microsoft que permite criar fluxos automatizados conectando aplicativos usados na universidade e no trabalho, como Microsoft Teams, Microsoft To Do, OneDrive, SharePoint e Calendário do Outlook.</p>
             <a class="btn btn--primary" href="power-automate.html">
               Conhecer o Power Automate
               <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -198,12 +197,12 @@
             <h4>O que você vai aprender</h4>
             <ul class="check-list">
               <li>O que são gatilhos, ações e fluxos.</li>
-              <li>Como criar um fluxo do zero, sem programar.</li>
-              <li>Como receber avisos de e-mails importantes.</li>
-              <li>Como salvar anexos automaticamente no OneDrive.</li>
-              <li>Cuidados com dados, licenças e limitações.</li>
+              <li>Como salvar no Microsoft To Do os trabalhos que chegam no Teams.</li>
+              <li>Como copiar automaticamente os materiais de aula para o seu OneDrive.</li>
+              <li>Como agendar no calendário os trabalhos do Teams com prazo de entrega.</li>
+              <li>Cuidados com dados, licenças e limitações da conta institucional.</li>
             </ul>
-            <p class="card__example"><strong>Importante:</strong> os tutoriais usam uma <strong>conta institucional</strong> (Microsoft 365 de escola ou empresa). Alguns recursos podem variar conforme a licença e as políticas da sua instituição.</p>
+            <p class="card__example"><strong>Importante:</strong> os tutoriais usam uma <strong>conta institucional</strong> (Microsoft 365 Education). Alguns recursos podem variar conforme a licença e as políticas da sua universidade.</p>
           </div>
         </article>
       </div>
@@ -213,57 +212,57 @@
     <section class="section" aria-labelledby="tutoriais-titulo">
       <div class="container">
         <header class="section-header reveal">
-          <p class="eyebrow">Mão na massa</p>
+          <p class="eyebrow">Mão na massa · Rotina universitária</p>
           <h2 id="tutoriais-titulo">Tutoriais em destaque</h2>
-          <p>Passo a passo completo, com explicações de cada termo e espaço para acompanhar seu progresso.</p>
+          <p>Três tutoriais passo a passo pensados para ajudar estudantes a organizar trabalhos, materiais de aula e prazos.</p>
         </header>
 
         <div class="grid grid--3">
           <article class="card card--link tutorial-card reveal">
-            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></span>
+            <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12l2.5 2.5L16 9"/></svg></span>
             <p class="tutorial-card__number">Power Automate · Tutorial 01</p>
-            <h3><a href="power-automate.html#tutorial-01">Receber um aviso quando chegar um e-mail importante</a></h3>
+            <h3><a href="power-automate.html#tutorial-01">Salvar no Microsoft To Do os trabalhos que chegam no Teams</a></h3>
             <ul class="badge-list">
               <li class="badge">Iniciante</li>
               <li class="badge badge--gray">≈ 15 minutos</li>
             </ul>
-            <p>Crie um fluxo que percebe a chegada de uma mensagem e envia um aviso automático para você.</p>
+            <p>Transforme avisos de trabalhos publicados no canal da disciplina no Teams em tarefas organizadas na sua lista do Microsoft To Do.</p>
             <ul class="flow-mini" aria-label="Resumo do fluxo">
-              <li class="flow-mini__trigger">E-mail chega</li>
+              <li class="flow-mini__trigger">Mensagem no Teams</li>
               <li class="flow-mini__arrow" aria-hidden="true">→</li>
-              <li class="flow-mini__action">Envia aviso</li>
+              <li class="flow-mini__action">Tarefa no To Do</li>
             </ul>
           </article>
 
           <article class="card card--link tutorial-card reveal">
             <span class="icon-badge icon-badge--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 10v6M9 13l3 3 3-3"/></svg></span>
             <p class="tutorial-card__number">Power Automate · Tutorial 02</p>
-            <h3><a href="power-automate.html#tutorial-02">Salvar anexos de e-mail automaticamente no OneDrive</a></h3>
+            <h3><a href="power-automate.html#tutorial-02">Salvar em uma pasta no OneDrive os materiais de aula</a></h3>
             <ul class="badge-list">
               <li class="badge">Iniciante</li>
               <li class="badge badge--gray">≈ 20 minutos</li>
             </ul>
-            <p>Monte um fluxo que guarda os arquivos recebidos por e-mail em uma pasta da nuvem.</p>
+            <p>Copie automaticamente novos apostilas, slides e PDFs postados na equipe da disciplina para uma pasta de estudos no seu OneDrive.</p>
             <ul class="flow-mini" aria-label="Resumo do fluxo">
-              <li class="flow-mini__trigger">E-mail com anexo</li>
+              <li class="flow-mini__trigger">Novo arquivo na turma</li>
               <li class="flow-mini__arrow" aria-hidden="true">→</li>
-              <li class="flow-mini__action">Salva no OneDrive</li>
+              <li class="flow-mini__action">Salvo no OneDrive</li>
             </ul>
           </article>
 
           <article class="card card--link tutorial-card reveal">
-            <span class="icon-badge icon-badge--navy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span>
-            <p class="tutorial-card__number">Pratique</p>
-            <h3><a href="desafios.html">Desafios práticos e quiz final</a></h3>
+            <span class="icon-badge icon-badge--navy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 14v3l2 1"/></svg></span>
+            <p class="tutorial-card__number">Power Automate · Tutorial 03</p>
+            <h3><a href="power-automate.html#tutorial-03">Agendar no calendário os trabalhos do Teams com prazo</a></h3>
             <ul class="badge-list">
-              <li class="badge badge--purple">Interativo</li>
-              <li class="badge badge--gray">≈ 10 minutos</li>
+              <li class="badge">Iniciante</li>
+              <li class="badge badge--gray">≈ 20 minutos</li>
             </ul>
-            <p>Teste o que você aprendeu com situações do cotidiano e receba explicações a cada resposta.</p>
-            <ul class="flow-mini" aria-label="Conteúdo">
-              <li class="flow-mini__trigger">3 desafios</li>
-              <li class="flow-mini__arrow" aria-hidden="true">+</li>
-              <li class="flow-mini__result">Quiz com 5 perguntas</li>
+            <p>A partir de qualquer mensagem de trabalho no Teams, informe a data de entrega e crie o compromisso com lembrete no seu Calendário.</p>
+            <ul class="flow-mini" aria-label="Resumo do fluxo">
+              <li class="flow-mini__trigger">Mensagem + Prazo</li>
+              <li class="flow-mini__arrow" aria-hidden="true">→</li>
+              <li class="flow-mini__result">Evento no Calendário</li>
             </ul>
           </article>
         </div>
@@ -309,16 +308,15 @@
             <li><a href="automacao.html">Entenda a automação</a></li>
             <li><a href="power-automate.html">Power Automate</a></li>
             <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
-            <li><a href="desafios.html">Desafios</a></li>
             <li><a href="sobre.html">Sobre o projeto</a></li>
           </ul>
         </nav>
         <nav aria-label="Rodapé — tutoriais">
           <p class="site-footer__title">Tutoriais</p>
           <ul>
-            <li><a href="power-automate.html#tutorial-01">Aviso de e-mail importante</a></li>
-            <li><a href="power-automate.html#tutorial-02">Salvar anexos no OneDrive</a></li>
-            <li><a href="desafios.html#quiz">Quiz final</a></li>
+            <li><a href="power-automate.html#tutorial-01">Trabalhos do Teams no To Do</a></li>
+            <li><a href="power-automate.html#tutorial-02">Materiais de aula no OneDrive</a></li>
+            <li><a href="power-automate.html#tutorial-03">Trabalhos no Calendário</a></li>
           </ul>
         </nav>
         <div>

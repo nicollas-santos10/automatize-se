@@ -70,6 +70,7 @@
 
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
   .grid--4 { grid-template-columns: repeat(4, 1fr); }
+  .tutorial-picker { grid-template-columns: repeat(3, 1fr); }
 
   .hero { padding-block: var(--space-9); }
   .hero__grid { grid-template-columns: 1.05fr 1fr; gap: var(--space-8); }
