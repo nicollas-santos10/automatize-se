@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desafios práticos e Quiz — Automatize seu dia a dia</title>
+  <meta name="description" content="Resolva três desafios práticos do cotidiano e responda ao quiz interativo sobre automação de tarefas e Microsoft Power Automate.">
+  <meta name="theme-color" content="#142B50">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Automatize seu dia a dia">
+  <meta property="og:title" content="Desafios práticos e Quiz — Automatize seu dia a dia">
+  <meta property="og:description" content="Pratique o que aprendeu com situações reais e teste seus conhecimentos no quiz final.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tutorials.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="AUTOMATIZE — página inicial">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6z"/></svg></span>
+        AUTOMATIZE
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle__text" aria-hidden="true">Menu</span>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="automacao.html">Entenda a automação</a></li>
+          <li><a href="power-automate.html">Ferramenta</a></li>
+          <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
+          <li><a href="desafios.html" aria-current="page">Desafios</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Desafios práticos</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Aprendizagem ativa</p>
+        <h1>Desafios práticos e Quiz final</h1>
+        <p class="lead">Coloque em prática o que você aprendeu analisando três situações comuns do dia a dia e, em seguida, responda ao questionário de cinco perguntas. Tudo funciona diretamente no seu navegador.</p>
+        <div class="btn-group" style="margin-top:var(--space-5)">
+          <a class="btn btn--primary" href="#desafios">Começar pelos desafios</a>
+          <a class="btn btn--secondary" href="#quiz">Ir direto ao quiz final</a>
+        </div>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="container" style="margin-top:var(--space-6)">
+        <div class="callout callout--warning">
+          <div>
+            <p class="callout__title">JavaScript desativado</p>
+            <p>Para responder aos desafios interativos e ao quiz final, ative o JavaScript no seu navegador.</p>
+          </div>
+        </div>
+      </div>
+    </noscript>
+
+    <!-- ============ DESAFIOS PRÁTICOS ============ -->
+    <section class="section" id="desafios" aria-labelledby="desafios-titulo">
+      <div class="container container--narrow">
+        <header class="section-header section-header--left">
+          <p class="eyebrow">Parte 1 · Situações do cotidiano</p>
+          <h2 id="desafios-titulo">Desafios práticos</h2>
+          <p>Leia cada situação, escolha a alternativa que melhor resolve o problema com automação e clique em <strong>Verificar resposta</strong> para ver a explicação.</p>
+        </header>
+
+        <div class="challenge-progress" id="desafios-progresso" aria-label="Progresso nos desafios">
+          <ol></ol>
+          <span id="desafios-resumo" aria-live="polite">0 de 3 desafios resolvidos</span>
+        </div>
+
+        <div id="desafios-lista"></div>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ FINAL ============ -->
+    <section class="section section--gray" id="quiz" aria-labelledby="quiz-titulo">
+      <div class="container container--narrow">
+        <div class="quiz">
+          <header class="quiz__header">
+            <p class="eyebrow" style="color:#DDD6FE">Parte 2 · Revisão geral</p>
+            <h2 id="quiz-titulo">Quiz final — 5 perguntas</h2>
+            <p>Responda às cinco questões de múltipla escolha para conferir sua pontuação e receber o comentário de cada resposta.</p>
+          </header>
+
+          <div class="quiz__body">
+            <form id="quiz-form" novalidate>
+              <div data-quiz-questions></div>
+              <div class="quiz__error feedback" role="alert" aria-live="assertive"></div>
+              <div class="quiz__actions">
+                <button type="submit" class="btn btn--primary">Finalizar e ver pontuação</button>
+                <button type="button" class="btn btn--secondary" data-quiz-restart>Limpar respostas</button>
+              </div>
+            </form>
+
+            <section class="quiz-result" id="quiz-resultado" aria-labelledby="quiz-resultado-titulo" hidden>
+              <p class="eyebrow">Seu resultado</p>
+              <p class="quiz-result__score" data-score>0<span> / 5</span></p>
+              <div class="quiz-result__meter" aria-hidden="true">
+                <div class="quiz-result__meter-fill"></div>
+              </div>
+              <h3 class="quiz-result__title" id="quiz-resultado-titulo">Resultado</h3>
+              <p data-message></p>
+              <div class="btn-group">
+                <button type="button" class="btn btn--primary" data-quiz-restart>Refazer o teste</button>
+                <a class="btn btn--secondary" href="power-automate.html#tutoriais">Rever os tutoriais</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="AUTOMATIZE — página inicial">
+            <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6z"/></svg></span>
+            AUTOMATIZE
+          </a>
+          <p style="margin-top:var(--space-3)"><strong style="color:#fff">Automatize seu dia a dia.</strong> Plataforma educativa gratuita que ensina pessoas sem conhecimentos técnicos a usar ferramentas de automação para simplificar tarefas do cotidiano.</p>
+          <p class="extension-tag">Projeto de extensão universitária</p>
+          <p>
+            <span class="editable" data-editable="universidade">[Nome da universidade]</span><br>
+            Curso: <span class="editable" data-editable="curso">[Nome do curso]</span><br>
+            Responsável: <span class="editable" data-editable="responsavel">[Nome do responsável]</span>
+          </p>
+        </div>
+        <nav aria-label="Rodapé — páginas">
+          <p class="site-footer__title">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="automacao.html">Entenda a automação</a></li>
+            <li><a href="power-automate.html">Power Automate</a></li>
+            <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Rodapé — tutoriais">
+          <p class="site-footer__title">Tutoriais</p>
+          <ul>
+            <li><a href="power-automate.html#tutorial-01">Aviso de e-mail importante</a></li>
+            <li><a href="power-automate.html#tutorial-02">Salvar anexos no OneDrive</a></li>
+            <li><a href="desafios.html#quiz">Quiz final</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="site-footer__title">Referências oficiais</p>
+          <ul>
+            <li><a href="https://learn.microsoft.com/pt-br/power-automate/">Documentação do Power Automate</a></li>
+            <li><a href="https://make.powerautomate.com/">Portal do Power Automate</a></li>
+            <li><a href="https://learn.microsoft.com/pt-br/training/powerplatform/power-automate">Cursos gratuitos no Microsoft Learn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-current-year>2026</span> Automatize seu dia a dia · Conteúdo educativo sem fins lucrativos.</p>
+        <p>Microsoft e Power Automate são marcas da Microsoft Corporation. Este projeto não é afiliado à Microsoft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo da página">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</body>
+</html>

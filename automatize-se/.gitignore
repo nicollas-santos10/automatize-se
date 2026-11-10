@@ -1,0 +1,15 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependências opcionais de ferramentas locais
+node_modules/
+dist/
+.cache/

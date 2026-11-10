@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entenda a automação — Automatize seu dia a dia</title>
+  <meta name="description" content="Aprenda, em linguagem simples, o que é automação, o que são gatilhos e ações, como funciona um fluxo automatizado e quais cuidados tomar.">
+  <meta name="theme-color" content="#142B50">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Automatize seu dia a dia">
+  <meta property="og:title" content="Entenda a automação — Automatize seu dia a dia">
+  <meta property="og:description" content="Gatilho → Ação → Resultado: entenda como funciona uma automação, sem precisar programar.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tutorials.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/tutorials.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="reading-progress" aria-hidden="true"><div class="reading-progress__bar"></div></div>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="AUTOMATIZE — página inicial">
+        <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6z"/></svg></span>
+        AUTOMATIZE
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="nav-toggle__text" aria-hidden="true">Menu</span>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="automacao.html" aria-current="page">Entenda a automação</a></li>
+          <li><a href="power-automate.html">Ferramenta</a></li>
+          <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
+          <li><a href="desafios.html">Desafios</a></li>
+          <li><a href="sobre.html">Sobre o projeto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está aqui">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li><span aria-current="page">Entenda a automação</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Introdução · Nível iniciante</p>
+        <h1>Entenda a automação</h1>
+        <p class="lead">Antes de usar qualquer ferramenta, vale entender a ideia por trás dela. Nesta página, você aprende o que é automação, como ela funciona e quais cuidados tomar, sempre com exemplos do cotidiano.</p>
+        <ul class="badge-list" style="margin-top:var(--space-5)">
+          <li class="badge">Leitura de ≈ 10 minutos</li>
+          <li class="badge badge--purple">Não precisa saber programar</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="container with-sidebar">
+        <aside>
+          <nav class="toc" aria-label="Nesta página" data-scrollspy>
+            <p class="toc__title">Nesta página</p>
+            <ol>
+              <li><a href="#o-que-e">O que é automação?</a></li>
+              <li><a href="#por-que">Por que automatizar tarefas?</a></li>
+              <li><a href="#exemplos">Exemplos no cotidiano</a></li>
+              <li><a href="#gatilhos">O que são gatilhos?</a></li>
+              <li><a href="#acoes">O que são ações?</a></li>
+              <li><a href="#fluxo">Como funciona um fluxo?</a></li>
+              <li><a href="#cuidados">Cuidados e limitações</a></li>
+              <li><a href="#glossario">Glossário</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <div class="prose">
+          <!-- 1 -->
+          <section class="article-section" aria-labelledby="o-que-e">
+            <h2 id="o-que-e"><span class="number-chip" aria-hidden="true">1</span>O que é automação?</h2>
+            <p><strong>Automação</strong> é fazer com que uma tarefa aconteça <strong>sozinha</strong>, seguindo uma regra que você definiu antes. Em vez de repetir os mesmos cliques todos os dias, você ensina o computador a fazer isso por você.</p>
+            <p>Toda automação pode ser resumida em uma frase:</p>
+            <div class="callout callout--info">
+              <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+              <div>
+                <p class="callout__title">A regra de ouro</p>
+                <p><strong>“Quando isso acontecer, faça aquilo.”</strong><br>Por exemplo: <em>quando</em> chegar um e-mail com anexo, <em>salve</em> o arquivo na minha pasta de documentos.</p>
+              </div>
+            </div>
+            <p>Hoje, ferramentas como o <a href="power-automate.html">Microsoft Power Automate</a> permitem criar essas regras de forma visual: você escolhe opções em menus, como quem monta um quebra-cabeça, sem escrever código.</p>
+          </section>
+
+          <!-- 2 -->
+          <section class="article-section" aria-labelledby="por-que">
+            <h2 id="por-que"><span class="number-chip" aria-hidden="true">2</span>Por que automatizar tarefas?</h2>
+            <p>Tarefas repetitivas tomam tempo, cansam e facilitam erros. Automatizá-las traz vantagens:</p>
+            <div class="grid grid--2">
+              <div class="card">
+                <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                <h3>Economia de tempo</h3>
+                <p>Minutos gastos todos os dias em tarefas manuais viram horas livres no fim do mês.</p>
+              </div>
+              <div class="card">
+                <span class="icon-badge icon-badge--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></span>
+                <h3>Menos erros</h3>
+                <p>A automação segue sempre a mesma regra: não esquece etapas nem digita errado por cansaço.</p>
+              </div>
+              <div class="card">
+                <span class="icon-badge icon-badge--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></span>
+                <h3>Nada fica esquecido</h3>
+                <p>Avisos e lembretes chegam na hora certa, mesmo quando você está ocupado com outras coisas.</p>
+              </div>
+              <div class="card">
+                <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8.5 15a4 4 0 0 0 7 0"/></svg></span>
+                <h3>Foco no que importa</h3>
+                <p>Com menos tarefas mecânicas, sobra mais energia para atividades que exigem atenção e criatividade.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3 -->
+          <section class="article-section" aria-labelledby="exemplos">
+            <h2 id="exemplos"><span class="number-chip" aria-hidden="true">3</span>Exemplos no cotidiano</h2>
+            <p>Você provavelmente já usa automações sem perceber:</p>
+            <div class="table-wrap" tabindex="0" role="region" aria-label="Tabela de exemplos de automação no cotidiano">
+              <table>
+                <caption class="sr-only">Exemplos de automações do dia a dia, com o que inicia cada uma e o que ela faz</caption>
+                <thead>
+                  <tr><th scope="col">Situação</th><th scope="col">Quando… (gatilho)</th><th scope="col">…faça (ação)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Despertador</th><td>Chegar 6h30</td><td>Tocar o alarme</td></tr>
+                  <tr><th scope="row">Débito automático</th><td>Chegar o dia do vencimento</td><td>Pagar a conta de luz</td></tr>
+                  <tr><th scope="row">Resposta de férias no e-mail</th><td>Receber uma mensagem</td><td>Responder “estou de férias até…”</td></tr>
+                  <tr><th scope="row">Luz com sensor de presença</th><td>Alguém entrar no corredor</td><td>Acender a lâmpada</td></tr>
+                  <tr><th scope="row">Backup de fotos do celular</th><td>Tirar uma foto nova</td><td>Copiar a foto para a nuvem</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Com ferramentas de automação, você pode criar regras parecidas para suas próprias tarefas, como e-mails, arquivos, planilhas e lembretes.</p>
+          </section>
+
+          <!-- 4 -->
+          <section class="article-section" aria-labelledby="gatilhos">
+            <h2 id="gatilhos"><span class="number-chip" aria-hidden="true">4</span>O que são gatilhos?</h2>
+            <p>O <span class="term">gatilho</span> é o <strong>evento que dá início</strong> à automação. É a parte “quando isso acontecer…” da regra. Sem gatilho, a automação não sabe a hora de começar.</p>
+            <p>Existem três tipos principais de gatilho:</p>
+            <div class="grid grid--3">
+              <div class="card">
+                <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+                <h3>Por evento</h3>
+                <p>Algo acontece e a automação começa.</p>
+                <p class="card__example"><strong>Ex.:</strong> chegou um e-mail; um arquivo foi criado; alguém respondeu um formulário.</p>
+              </div>
+              <div class="card">
+                <span class="icon-badge icon-badge--purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+                <h3>Por horário</h3>
+                <p>A automação começa em dias e horários programados.</p>
+                <p class="card__example"><strong>Ex.:</strong> toda sexta-feira, às 17h.</p>
+              </div>
+              <div class="card">
+                <span class="icon-badge icon-badge--navy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg></span>
+                <h3>Manual</h3>
+                <p>Você aperta um botão quando quiser que a automação rode.</p>
+                <p class="card__example"><strong>Ex.:</strong> clicar em “executar” para enviar um relatório.</p>
+              </div>
+            </div>
+            <p>No Power Automate, esses três tipos aparecem como fluxos <strong>automatizados</strong>, <strong>agendados</strong> e <strong>instantâneos</strong>. Você vai encontrá-los nos <a href="power-automate.html#tutoriais">tutoriais</a>.</p>
+          </section>
+
+          <!-- 5 -->
+          <section class="article-section" aria-labelledby="acoes">
+            <h2 id="acoes"><span class="number-chip" aria-hidden="true">5</span>O que são ações?</h2>
+            <p>A <span class="term">ação</span> é <strong>a tarefa que a automação executa</strong> depois que o gatilho acontece. É a parte “…faça aquilo” da regra.</p>
+            <p>Uma automação pode ter <strong>uma ou várias ações</strong>, que acontecem em sequência. Exemplos:</p>
+            <ul class="check-list">
+              <li>Enviar um e-mail ou uma mensagem.</li>
+              <li>Salvar um arquivo em uma pasta.</li>
+              <li>Adicionar uma linha em uma planilha.</li>
+              <li>Criar um evento na agenda.</li>
+              <li>Mover uma mensagem para outra pasta.</li>
+            </ul>
+            <div class="callout callout--info">
+              <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+              <div>
+                <p class="callout__title">E as condições?</p>
+                <p>Às vezes, você quer que uma ação aconteça apenas em certos casos. Para isso existem as <span class="term">condições</span>: “<em>se</em> o e-mail for da coordenação, <em>então</em> me avise”. Elas funcionam como um filtro entre o gatilho e a ação.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 6 -->
+          <section class="article-section" aria-labelledby="fluxo">
+            <h2 id="fluxo"><span class="number-chip" aria-hidden="true">6</span>Como funciona um fluxo automatizado?</h2>
+            <p>Um <span class="term">fluxo</span> é o conjunto completo: <strong>um gatilho + uma ou mais ações</strong>, que geram um <strong>resultado</strong>. Veja um exemplo:</p>
+
+            <!-- Diagrama didático construído em HTML + CSS (sem imagem estática) -->
+            <figure style="margin:0">
+              <ol class="flow-diagram" aria-label="Diagrama: gatilho, ação e resultado">
+                <li class="flow-node flow-node--trigger">
+                  <span class="flow-node__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+                  <span class="flow-node__label">1 · Gatilho</span>
+                  <span class="flow-node__text">Receber um e-mail</span>
+                  <span class="flow-node__hint">O evento que inicia tudo: uma mensagem com anexo chega à caixa de entrada.</span>
+                </li>
+                <li class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+                <li class="flow-node flow-node--action">
+                  <span class="flow-node__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+                  <span class="flow-node__label">2 · Ação</span>
+                  <span class="flow-node__text">Salvar o anexo automaticamente</span>
+                  <span class="flow-node__hint">A tarefa executada pela ferramenta, sem nenhum clique seu.</span>
+                </li>
+                <li class="flow-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></li>
+                <li class="flow-node flow-node--result">
+                  <span class="flow-node__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 13l2 2 4-4"/></svg></span>
+                  <span class="flow-node__label">3 · Resultado</span>
+                  <span class="flow-node__text">Arquivo armazenado na pasta desejada</span>
+                  <span class="flow-node__hint">O que você ganha: o arquivo organizado, pronto para usar.</span>
+                </li>
+              </ol>
+              <figcaption class="sr-only">Fluxo de exemplo: ao receber um e-mail (gatilho), o anexo é salvo automaticamente (ação), e o arquivo fica armazenado na pasta desejada (resultado).</figcaption>
+            </figure>
+
+            <h3>Passo a passo do que acontece</h3>
+            <ol>
+              <li><strong>Você cria o fluxo uma única vez</strong>, escolhendo o gatilho e as ações em uma ferramenta visual.</li>
+              <li><strong>A ferramenta fica “de olho”</strong> no gatilho. Ela confere periodicamente se o evento aconteceu.</li>
+              <li><strong>Quando o gatilho acontece</strong>, as ações são executadas na ordem definida.</li>
+              <li><strong>O resultado aparece</strong>, e a ferramenta guarda um histórico de cada execução para você conferir se deu tudo certo.</li>
+            </ol>
+            <p>Para que tudo isso funcione, a ferramenta precisa de permissão para acessar seus aplicativos, como o e-mail e o OneDrive. Essa ligação é feita pelos <span class="term">conectores</span>.<span class="term-note">Conector é como uma “ponte” entre a ferramenta de automação e outro aplicativo. Você autoriza o acesso uma vez, entrando com a sua conta.</span></p>
+          </section>
+
+          <!-- 7 -->
+          <section class="article-section" aria-labelledby="cuidados">
+            <h2 id="cuidados"><span class="number-chip" aria-hidden="true">7</span>Cuidados e limitações</h2>
+            <p>Automação é poderosa, mas exige atenção. Antes de criar seus fluxos, lembre-se:</p>
+            <div class="callout callout--privacy">
+              <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+              <div>
+                <p class="callout__title">Proteja seus dados e os de outras pessoas</p>
+                <ul>
+                  <li>E-mails e arquivos podem conter <strong>dados pessoais</strong>. Não encaminhe informações automaticamente para endereços externos ou desconhecidos.</li>
+                  <li><strong>Nunca compartilhe sua senha.</strong> As ferramentas oficiais pedem que você entre com sua conta na página da própria empresa (Microsoft, por exemplo), e não em sites de terceiros.</li>
+                  <li>Siga as regras da sua instituição e a <abbr title="Lei Geral de Proteção de Dados Pessoais">LGPD</abbr> (Lei Geral de Proteção de Dados Pessoais).</li>
+                  <li>Faça seus testes com <strong>dados fictícios</strong>.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="callout callout--warning">
+              <svg class="callout__icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17h.01"/></svg>
+              <div>
+                <p class="callout__title">Limitações comuns</p>
+                <ul>
+                  <li><strong>Nem toda conta tem acesso a todos os recursos.</strong> Algumas funções dependem de licenças pagas ou da liberação pelo setor de TI.</li>
+                  <li><strong>A automação não é instantânea em todos os casos.</strong> Alguns gatilhos verificam novidades a cada alguns minutos.</li>
+                  <li><strong>As ferramentas mudam.</strong> Nomes de botões e menus podem ser atualizados com o tempo.</li>
+                  <li><strong>Regras mal configuradas podem gerar efeitos indesejados</strong>, como dezenas de avisos repetidos. Comece com fluxos simples e teste antes de deixar rodando.</li>
+                  <li><strong>Automação não substitui o seu julgamento.</strong> Revise periodicamente se os fluxos continuam funcionando como esperado.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Glossário -->
+          <section class="article-section" aria-labelledby="glossario">
+            <h2 id="glossario">Glossário: termos que você vai encontrar</h2>
+            <dl class="glossary">
+              <div><dt>Automação</dt><dd>Fazer uma tarefa acontecer sozinha, a partir de uma regra definida.</dd></div>
+              <div><dt>Fluxo</dt><dd>A automação completa: um gatilho seguido de uma ou mais ações.</dd></div>
+              <div><dt>Gatilho</dt><dd>O evento que inicia o fluxo (ex.: chegada de um e-mail).</dd></div>
+              <div><dt>Ação</dt><dd>A tarefa que o fluxo executa (ex.: salvar um arquivo).</dd></div>
+              <div><dt>Condição</dt><dd>Uma regra do tipo “se… então…” que decide se uma ação deve acontecer.</dd></div>
+              <div><dt>Conector</dt><dd>A “ponte” que permite à ferramenta acessar outro aplicativo, como Outlook ou OneDrive.</dd></div>
+              <div><dt>Conteúdo dinâmico</dt><dd>Informações que mudam a cada execução, como o assunto ou o remetente do e-mail recebido.</dd></div>
+              <div><dt>Execução</dt><dd>Cada vez que o fluxo roda. A ferramenta guarda um histórico das execuções.</dd></div>
+              <div><dt>Nuvem</dt><dd>Serviços que funcionam pela internet, sem depender do seu computador ligado.</dd></div>
+              <div><dt>Licença</dt><dd>A permissão (gratuita ou paga) que define quais recursos sua conta pode usar.</dd></div>
+            </dl>
+          </section>
+
+          <div class="cta" style="margin-top:var(--space-8)">
+            <h2>Agora é hora de praticar!</h2>
+            <p>Conheça o Power Automate e crie seu primeiro fluxo com um tutorial guiado.</p>
+            <div class="btn-group" style="justify-content:center">
+              <a class="btn btn--light" href="power-automate.html">Conhecer o Power Automate</a>
+              <a class="btn btn--secondary" href="desafios.html">Testar meus conhecimentos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="AUTOMATIZE — página inicial">
+            <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6z"/></svg></span>
+            AUTOMATIZE
+          </a>
+          <p style="margin-top:var(--space-3)"><strong style="color:#fff">Automatize seu dia a dia.</strong> Plataforma educativa gratuita que ensina pessoas sem conhecimentos técnicos a usar ferramentas de automação para simplificar tarefas do cotidiano.</p>
+          <p class="extension-tag">Projeto de extensão universitária</p>
+          <p>
+            <span class="editable" data-editable="universidade">[Nome da universidade]</span><br>
+            Curso: <span class="editable" data-editable="curso">[Nome do curso]</span><br>
+            Responsável: <span class="editable" data-editable="responsavel">[Nome do responsável]</span>
+          </p>
+        </div>
+        <nav aria-label="Rodapé — páginas">
+          <p class="site-footer__title">Navegação</p>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="automacao.html">Entenda a automação</a></li>
+            <li><a href="power-automate.html">Power Automate</a></li>
+            <li><a href="power-automate.html#tutoriais">Tutoriais</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="sobre.html">Sobre o projeto</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Rodapé — tutoriais">
+          <p class="site-footer__title">Tutoriais</p>
+          <ul>
+            <li><a href="power-automate.html#tutorial-01">Aviso de e-mail importante</a></li>
+            <li><a href="power-automate.html#tutorial-02">Salvar anexos no OneDrive</a></li>
+            <li><a href="desafios.html#quiz">Quiz final</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="site-footer__title">Referências oficiais</p>
+          <ul>
+            <li><a href="https://learn.microsoft.com/pt-br/power-automate/">Documentação do Power Automate</a></li>
+            <li><a href="https://make.powerautomate.com/">Portal do Power Automate</a></li>
+            <li><a href="https://learn.microsoft.com/pt-br/training/powerplatform/power-automate">Cursos gratuitos no Microsoft Learn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-current-year>2026</span> Automatize seu dia a dia · Conteúdo educativo sem fins lucrativos.</p>
+        <p>Microsoft e Power Automate são marcas da Microsoft Corporation. Este projeto não é afiliado à Microsoft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Voltar ao topo da página">
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</body>
+</html>
