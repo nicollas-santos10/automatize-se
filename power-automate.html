@@ -306,12 +306,9 @@
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da lista Trabalhos da Faculdade criada no Microsoft To Do">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Lista “Trabalhos da Faculdade” criada no Microsoft To Do.</span>
-                            <code>assets/screenshots/pa-t01-passo-01.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t01-passo-01.png"
+                               alt="Interface do Microsoft To Do mostrando a lista Trabalhos da Faculdade criada no menu lateral esquerdo"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 1.1</b> — Criação da lista “Trabalhos da Faculdade” no Microsoft To Do.</figcaption>
                       </figure>
@@ -325,19 +322,16 @@
                         <li>Abra <a href="https://make.powerautomate.com/">make.powerautomate.com</a> e clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> no menu esquerdo.</li>
                         <li>Escolha <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>.</li>
                         <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Salvar trabalhos do Teams no To Do</code>.</li>
-                        <li>No campo de busca de gatilhos, digite <code> nova mensagem de canal</code> e selecione <span class="ui-label">Quando uma nova mensagem de canal é adicionada <span class="ui-label__en">(When a new channel message is added)</span></span> do conector <strong>Microsoft Teams</strong>.</li>
+                        <li>No campo de busca de gatilhos, digite <code>Quando uma nova mensagem</code> e selecione <span class="ui-label">Quando uma nova mensagem do canal for adicionada <span class="ui-label__en">(When a new channel message is added)</span></span> do conector <strong>Microsoft Teams</strong>.</li>
                         <li>Clique em <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da escolha do gatilho Quando uma nova mensagem de canal é adicionada">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Janela de criação com o gatilho “Quando uma nova mensagem de canal é adicionada” (Microsoft Teams).</span>
-                            <code>assets/screenshots/pa-t01-passo-02.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t01-passo-02.png"
+                               alt="Janela Criar um fluxo da nuvem automatizado com o nome Salvar trabalhos do Teams no To Do e o gatilho Quando uma nova mensagem do canal for adicionada selecionado"
+                               loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 1.2</b> — Seleção do gatilho de nova mensagem de canal do Microsoft Teams.</figcaption>
+                        <figcaption><b>Figura 1.2</b> — Seleção do gatilho de nova mensagem do canal do Microsoft Teams.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -346,21 +340,18 @@
                     <h3 class="step__title"><small>Passo 3 de 5</small>Escolha a equipe e o canal da disciplina</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Clique no bloco do gatilho <span class="ui-label">Quando uma nova mensagem de canal é adicionada</span>.</li>
+                        <li>Clique no bloco do gatilho <span class="ui-label">Quando uma nova mensagem do canal for adicionada</span>.</li>
                         <li>Preencha os dois campos selecionando a turma que você quer acompanhar:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Equipe (Team)</dt><dd>Selecione a equipe da disciplina (ex.: <code>Engenharia de Software — Turma A</code>).</dd></div>
-                        <div><dt>Canal (Channel)</dt><dd>Selecione o canal onde os trabalhos e avisos são postados (geralmente <code>Geral</code> / <em>General</em>).</dd></div>
+                        <div><dt>Equipe (Team)</dt><dd>Selecione a equipe da disciplina (ou uma equipe de testes, como <code>Teste</code>).</dd></div>
+                        <div><dt>Canal (Channel)</dt><dd>Selecione o canal onde os trabalhos e avisos são postados (geralmente <code>General</code> / <code>Geral</code>).</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da seleção da Equipe e do Canal no gatilho do Teams">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Bloco do gatilho com a Equipe da disciplina e o Canal “Geral” selecionados.</span>
-                            <code>assets/screenshots/pa-t01-passo-03.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t01-passo-03.png"
+                               alt="Painel de parâmetros do gatilho Quando uma nova mensagem do canal for adicionada com a Equipe Teste e o Canal General selecionados"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 1.3</b> — Configuração da equipe e do canal da disciplina no Teams.</figcaption>
                       </figure>
@@ -371,23 +362,20 @@
                     <h3 class="step__title"><small>Passo 4 de 5</small>Adicione a ação para criar a tarefa no Microsoft To Do</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span> abaixo do gatilho.</li>
+                        <li>Clique no botão <span class="ui-label">+</span> abaixo do gatilho para adicionar uma nova etapa.</li>
                         <li>Pesquise por <code>Microsoft To-Do (Business)</code> e selecione a ação <span class="ui-label">Adicionar uma tarefa (V3) <span class="ui-label__en">(Add a to-do (V3))</span></span>.</li>
-                        <li>Configure os campos da tarefa usando o painel de <strong>conteúdo dinâmico</strong>:</li>
+                        <li>Em <em>Parâmetros avançados</em>, clique em <span class="ui-label">Mostrar tudo</span> e configure os campos usando o painel de <strong>conteúdo dinâmico</strong>:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Lista de tarefas (To-do List)</dt><dd>Selecione a lista <code>Trabalhos da Faculdade</code> criada no Passo 1.</dd></div>
-                        <div><dt>Assunto (Subject)</dt><dd>Digite <code>[Teams] </code> seguido do conteúdo dinâmico <strong>Assunto da mensagem (Message subject)</strong> ou <strong>Conteúdo da mensagem em texto simples (Message body plain text)</strong>.</dd></div>
-                        <div><dt>Conteúdo do Corpo (Body Content)</dt><dd>Em parâmetros avançados, selecione <strong>Conteúdo da mensagem (Message body content)</strong> e o <strong>Link para a mensagem (Link to message)</strong> para poder abrir o aviso original no Teams com um clique.</dd></div>
+                        <div><dt>Lista de Tarefas Pendentes (To-do List)</dt><dd>Selecione a lista <code>Trabalhos da Faculdade</code> criada no Passo 1.</dd></div>
+                        <div><dt>Título (Title)</dt><dd>Digite <code>[teams] </code> seguido do conteúdo dinâmico <strong>Mensagem assunto</strong> (<em>Message subject</em>).</dd></div>
+                        <div><dt>Corpo Conteúdo (Body Content)</dt><dd>Selecione o conteúdo dinâmico <strong>Mensagem corpo content</strong> (<em>Message body content</em>) para trazer o texto completo publicado no canal.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Adicionar uma tarefa (V3) do Microsoft To-Do">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Ação “Adicionar uma tarefa (V3)” configurada com a lista “Trabalhos da Faculdade”.</span>
-                            <code>assets/screenshots/pa-t01-passo-04.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t01-passo-04.png"
+                               alt="Painel da ação Adicionar uma tarefa (V3) preenchido com a lista Trabalhos da Faculdade, Título com Mensagem assunto e Corpo Conteúdo com Mensagem corpo content"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 1.4</b> — Configuração da ação “Adicionar uma tarefa (V3)” no Microsoft To Do.</figcaption>
                       </figure>
@@ -400,19 +388,16 @@
                       <ol>
                         <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no topo da página.</li>
                         <li>Clique em <span class="ui-label">Testar <span class="ui-label__en">(Test)</span></span> → <span class="ui-label">Manualmente <span class="ui-label__en">(Manually)</span></span> → <span class="ui-label">Testar</span>.</li>
-                        <li>Publique uma mensagem de teste em um canal de equipe de estudos (ou aguarde uma nova publicação no canal configurado).</li>
+                        <li>Publique uma mensagem com assunto no canal configurado no Teams.</li>
                         <li>Abra o <strong>Microsoft To Do</strong> e verifique a nova tarefa criada na lista <code>Trabalhos da Faculdade</code>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da tarefa criada na lista Trabalhos da Faculdade no Microsoft To Do">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Tarefa criada automaticamente dentro da lista “Trabalhos da Faculdade” no Microsoft To Do.</span>
-                            <code>assets/screenshots/pa-t01-passo-05.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t01-passo-05.png"
+                               alt="Lista Trabalhos da Faculdade no Microsoft To Do exibindo a tarefa [teams] Olá criada automaticamente pelo fluxo"
+                               loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 1.5</b> — Tarefa adicionada automaticamente ao Microsoft To Do.</figcaption>
+                        <figcaption><b>Figura 1.5</b> — Tarefa adicionada automaticamente à lista “Trabalhos da Faculdade” no Microsoft To Do.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -424,7 +409,7 @@
                     Resultado esperado
                   </h3>
                   <div class="result-box">
-                    <p>Sempre que um trabalho ou aviso for publicado no canal monitorado do Teams, uma nova tarefa será criada automaticamente na sua lista <code>Trabalhos da Faculdade</code> no Microsoft To Do, com o texto e o link direto para a postagem original.</p>
+                    <p>Sempre que um trabalho ou aviso for publicado no canal monitorado do Teams, uma nova tarefa será criada automaticamente na sua lista <code>Trabalhos da Faculdade</code> no Microsoft To Do, com o texto da postagem.</p>
                   </div>
                 </section>
 
@@ -531,12 +516,9 @@
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da pasta Materiais de Aula criada no OneDrive">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Pasta “Materiais de Aula” criada no OneDrive for Business do estudante.</span>
-                            <code>assets/screenshots/pa-t02-passo-01.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-01.png"
+                               alt="Pasta Materiais de Aula criada e vazia dentro de Meus arquivos no OneDrive for Business"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 2.1</b> — Pasta “Materiais de Aula” pronta no OneDrive for Business.</figcaption>
                       </figure>
@@ -549,17 +531,14 @@
                       <ol>
                         <li>No Power Automate, clique em <span class="ui-label">+ Criar <span class="ui-label__en">(Create)</span></span> → <span class="ui-label">Fluxo da nuvem automatizado <span class="ui-label__en">(Automated cloud flow)</span></span>.</li>
                         <li>Em <span class="ui-label">Nome do fluxo</span>, digite: <code>Salvar materiais de aula no OneDrive</code>.</li>
-                        <li>Pesquise por <code>Quando um arquivo é criado</code> e selecione <span class="ui-label">Quando um arquivo é criado (somente propriedades) <span class="ui-label__en">(When a file is created (properties only))</span></span> do conector <strong>SharePoint</strong>.</li>
+                        <li>Pesquise por <code>Quando um arquivo é criado</code> e selecione <span class="ui-label">Quando um arquivo é criado (somente propriedades) <span class="ui-label__en">(When a file is created (properties only))</span></span> do conector <strong>SharePoint</strong> (ícone verde do SharePoint).</li>
                         <li>Clique em <span class="ui-label">Criar <span class="ui-label__en">(Create)</span></span>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do gatilho Quando um arquivo é criado (somente propriedades)">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Seleção do gatilho “Quando um arquivo é criado (somente propriedades)” (SharePoint).</span>
-                            <code>assets/screenshots/pa-t02-passo-02.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-02.png"
+                               alt="Janela Criar um fluxo da nuvem automatizado com o nome Salvar materiais de aula no OneDrive e a busca pelo gatilho Quando um arquivo é criado (somente propriedades) do SharePoint"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 2.2</b> — Criação do fluxo com o gatilho de novo arquivo no SharePoint.</figcaption>
                       </figure>
@@ -574,18 +553,15 @@
                         <li>Configure os campos:</li>
                       </ol>
                       <dl class="config-list">
-                        <div><dt>Endereço do Site (Site Address)</dt><dd>Selecione na lista o nome da sua equipe do Teams (ex.: <code>Engenharia de Software — Turma A</code>).</dd></div>
+                        <div><dt>Endereço do Site (Site Address)</dt><dd>Selecione na lista o nome da sua equipe do Teams.</dd></div>
                         <div><dt>Nome da Biblioteca (Library Name)</dt><dd>Selecione <code>Documentos</code> (<em>Documents</em>) ou <code>Materiais de Aula</code>, caso sua turma use a biblioteca específica de materiais.</dd></div>
                         <div><dt>Pasta (Folder — opcional)</dt><dd>Se quiser monitorar apenas um canal (como <code>/General</code>), clique no ícone de pasta e escolha-o.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do gatilho SharePoint configurado com a turma e a biblioteca Documentos">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Gatilho configurado com o Endereço do Site da disciplina e a Biblioteca “Documentos”.</span>
-                            <code>assets/screenshots/pa-t02-passo-03.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-03.png"
+                               alt="Painel de parâmetros do gatilho Quando um arquivo é criado (somente propriedades) preenchido com o Endereço do Site da equipe e o Nome da Biblioteca Documentos"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 2.3</b> — Escolha da turma e da biblioteca de documentos.</figcaption>
                       </figure>
@@ -597,24 +573,21 @@
                     <div class="step__content">
                       <p>Como o gatilho traz apenas as informações do arquivo (nome e local), precisamos de uma etapa rápida para buscar o conteúdo do documento antes de salvá-lo no OneDrive.</p>
                       <ol>
-                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span>.</li>
-                        <li>Pesquise por <code>SharePoint</code> e escolha a ação <span class="ui-label">Obter conteúdo do arquivo <span class="ui-label__en">(Get file content)</span></span>.</li>
+                        <li>Clique no botão <span class="ui-label">+</span> abaixo do gatilho para adicionar uma ação.</li>
+                        <li>Pesquise por <code>SharePoint</code> e escolha a ação <span class="ui-label">Obter conteúdo de arquivo <span class="ui-label__en">(Get file content)</span></span>.</li>
                         <li>Preencha os dois campos:</li>
                       </ol>
                       <dl class="config-list">
                         <div><dt>Endereço do Site (Site Address)</dt><dd>Selecione o mesmo site da equipe da disciplina escolhido no Passo 3.</dd></div>
-                        <div><dt>Identificador de Arquivo (File Identifier)</dt><dd>No painel de conteúdo dinâmico, selecione <strong>Identificador (Identifier)</strong> vindo do gatilho.</dd></div>
+                        <div><dt>Identificador de Arquivo (File Identifier)</dt><dd>No painel de conteúdo dinâmico, selecione <strong>Identificador (Identifier)</strong> vindo do gatilho. <strong>Atenção:</strong> escolha <code>Identificador</code> por extenso, e não <code>ID</code>.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Obter conteúdo do arquivo do SharePoint">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Ação “Obter conteúdo do arquivo” com o campo “Identificador” dinâmico preenchido.</span>
-                            <code>assets/screenshots/pa-t02-passo-04.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-04.png"
+                               alt="Painel de parâmetros da ação Obter conteúdo de arquivo no SharePoint preenchido com o Endereço do Site e o conteúdo dinâmico Identificador"
+                               loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 2.4</b> — Ação “Obter conteúdo do arquivo” configurada com o Identificador dinâmico.</figcaption>
+                        <figcaption><b>Figura 2.4</b> — Ação “Obter conteúdo de arquivo” configurada com o campo “Identificador” dinâmico.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -623,23 +596,20 @@
                     <h3 class="step__title"><small>Passo 5 de 6</small>Adicione a ação para criar o arquivo no OneDrive</h3>
                     <div class="step__content">
                       <ol>
-                        <li>Clique em <span class="ui-label">+ Nova etapa <span class="ui-label__en">(+ New step)</span></span>.</li>
+                        <li>Clique no botão <span class="ui-label">+</span> abaixo da etapa anterior.</li>
                         <li>Pesquise por <code>OneDrive for Business</code> e escolha a ação <span class="ui-label">Criar arquivo <span class="ui-label__en">(Create file)</span></span>.</li>
                         <li>Configure os três campos:</li>
                       </ol>
                       <dl class="config-list">
                         <div><dt>Caminho da Pasta (Folder Path)</dt><dd>Clique no ícone de pasta e escolha <code>/Materiais de Aula</code> (criada no Passo 1).</dd></div>
-                        <div><dt>Nome do Arquivo (File Name)</dt><dd>No conteúdo dinâmico do gatilho, selecione <strong>Nome de arquivo com extensão (File name with extension)</strong>.</dd></div>
-                        <div><dt>Conteúdo do Arquivo (File Content)</dt><dd>No conteúdo dinâmico da etapa anterior (<em>Obter conteúdo do arquivo</em>), selecione <strong>Conteúdo do arquivo (File Content)</strong>.</dd></div>
+                        <div><dt>Nome do Arquivo (File Name)</dt><dd>No conteúdo dinâmico do gatilho, selecione <strong>Nome de arquivo com extensão (File name with extension)</strong> (não use <code>Título</code>, pois ele não traz a extensão do arquivo).</dd></div>
+                        <div><dt>Conteúdo do Arquivo (File Content)</dt><dd>No conteúdo dinâmico da etapa <em>Obter conteúdo de arquivo</em>, selecione <strong>Corpo</strong> (ou <strong>Conteúdo do arquivo / File Content</strong>).</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da ação Criar arquivo no OneDrive for Business">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Ação “Criar arquivo” preenchida com Caminho da Pasta, Nome de arquivo com extensão e Conteúdo do arquivo.</span>
-                            <code>assets/screenshots/pa-t02-passo-05.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-05.png"
+                               alt="Painel de parâmetros da ação Criar arquivo do OneDrive for Business preenchido com /Materiais de Aula, Nome de arquivo com extensão e Corpo"
+                               loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 2.5</b> — Configuração da ação “Criar arquivo” no OneDrive for Business.</figcaption>
                       </figure>
@@ -652,19 +622,16 @@
                       <ol>
                         <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no topo da página.</li>
                         <li>Clique em <span class="ui-label">Testar <span class="ui-label__en">(Test)</span></span> → <span class="ui-label">Manualmente <span class="ui-label__en">(Manually)</span></span> → <span class="ui-label">Testar</span>.</li>
-                        <li>Envie um arquivo de teste (ex.: <code>aula-01-slides.pdf</code>) na aba <strong>Arquivos</strong> da equipe de testes no Teams.</li>
+                        <li>Envie um arquivo de teste na aba <strong>Arquivos</strong> da equipe da disciplina no Teams.</li>
                         <li>Abra a pasta <code>Materiais de Aula</code> no seu OneDrive e confira a cópia salva automaticamente.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do material de aula salvo automaticamente no OneDrive">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Arquivo “aula-01-slides.pdf” copiado automaticamente para a pasta “Materiais de Aula” no OneDrive.</span>
-                            <code>assets/screenshots/pa-t02-passo-06.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t02-passo-06.png"
+                               alt="Pasta Materiais de Aula no OneDrive exibindo o arquivo de teste salvo automaticamente há alguns segundos"
+                               loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 2.6</b> — Material de aula salvo na pasta pessoal do OneDrive.</figcaption>
+                        <figcaption><b>Figura 2.6</b> — Material de aula salvo automaticamente na pasta pessoal do OneDrive.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -780,14 +747,9 @@
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da criação do fluxo instantâneo Para uma mensagem selecionada">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Janela de criação de Fluxo da nuvem instantâneo com o gatilho “Para uma mensagem selecionada” (Teams).</span>
-                            <code>assets/screenshots/pa-t03-passo-01.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t03-passo-01.png" alt="Janela de criação de Fluxo da nuvem instantâneo no Power Automate com o gatilho Para uma mensagem selecionada (V2) do Microsoft Teams selecionado" loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 3.1</b> — Escolha do gatilho “Para uma mensagem selecionada” do Microsoft Teams.</figcaption>
+                        <figcaption><b>Figura 3.1</b> — Escolha do gatilho “Para uma mensagem selecionada (V2)” do Microsoft Teams.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -808,12 +770,7 @@
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela dos campos Nome do trabalho e Data de entrega no gatilho do Teams">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Gatilho configurado com as entradas “Nome do trabalho” e “Data de entrega”.</span>
-                            <code>assets/screenshots/pa-t03-passo-02.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t03-passo-02.png" alt="Editor de Cartão Adaptável no Power Automate configurado com os campos Nome do trabalho e Data de entrega e botão Enviar" loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 3.2</b> — Campos de entrada para informar o título e a data de entrega do trabalho.</figcaption>
                       </figure>
@@ -829,12 +786,7 @@
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela da seleção da ação Criar evento (V4)">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Seleção da ação “Criar evento (V4)” do conector Office 365 Outlook.</span>
-                            <code>assets/screenshots/pa-t03-passo-03.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t03-passo-03.png" alt="Fluxo no Power Automate com o gatilho Para uma mensagem selecionada (V2) conectado à ação Criar evento (V4) do Office 365 Outlook" loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 3.3</b> — Ação “Criar evento (V4)” adicionada ao fluxo.</figcaption>
                       </figure>
@@ -853,17 +805,11 @@
                         <div><dt>Hora de início (Start time)</dt><dd>Selecione o conteúdo dinâmico <strong>Data de entrega</strong>.</dd></div>
                         <div><dt>Hora de término (End time)</dt><dd>Selecione novamente o conteúdo dinâmico <strong>Data de entrega</strong>.</dd></div>
                         <div><dt>Fuso horário (Time zone)</dt><dd>Selecione <code>(UTC-03:00) Brasília</code>.</dd></div>
-                        <div><dt>É um evento de dia inteiro? (Is all day event?)</dt><dd>Em parâmetros avançados, marque <strong>Sim (Yes)</strong> para que o prazo fique destacado no topo do dia no seu calendário.</dd></div>
-                        <div><dt>Corpo (Body)</dt><dd>Insira o <strong>Conteúdo da mensagem em texto simples</strong> e o <strong>Link para a mensagem</strong> do Teams.</dd></div>
+                        <div><dt>Corpo (Body)</dt><dd>Insira o <strong>Conteúdo da mensagem</strong> do Teams.</dd></div>
                       </dl>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela dos campos da ação Criar evento (V4) preenchidos">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Ação “Criar evento (V4)” preenchida com Calendário, Nome do trabalho, Data de entrega e Fuso horário de Brasília.</span>
-                            <code>assets/screenshots/pa-t03-passo-04.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t03-passo-04.png" alt="Parâmetros da ação Criar evento (V4) preenchidos com Calendário, Assunto com Nome do trabalho, Hora de início e término com Data de entrega, Fuso horário de Brasília e Corpo da mensagem" loading="lazy" decoding="async">
                         </div>
                         <figcaption><b>Figura 3.4</b> — Preenchimento dos campos do evento no Calendário do Outlook.</figcaption>
                       </figure>
@@ -876,19 +822,14 @@
                       <ol>
                         <li>Clique em <span class="ui-label">Salvar <span class="ui-label__en">(Save)</span></span> no Power Automate.</li>
                         <li>Abra o <strong>Microsoft Teams</strong>, passe o mouse sobre qualquer mensagem de trabalho e clique nos três pontinhos <span class="ui-label">... (Mais opções)</span>.</li>
-                        <li>Vá em <span class="ui-label">Mais ações <span class="ui-label__en">(More actions)</span></span> e clique em <span class="ui-label">Agendar trabalho no Calendário</span>.</li>
+                        <li>Clique em <span class="ui-label">Agendar trabalho no Calendário</span> (ou acesse via <span class="ui-label">Mais ações <span class="ui-label__en">(More actions)</span></span>).</li>
                         <li>Preencha o nome do trabalho e a data de entrega na janela que aparecer e clique em <strong>Enviar</strong>.</li>
                       </ol>
                       <figure class="screenshot">
                         <div class="screenshot__frame">
-                          <div class="screenshot__placeholder" role="img" aria-label="Espaço reservado para captura de tela do menu Mais ações em uma mensagem do Teams e do evento criado no calendário">
-                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
-                            <strong>Captura de tela pendente</strong>
-                            <span>Menu “Mais ações” na mensagem do Teams acionando o fluxo e o evento criado no Calendário.</span>
-                            <code>assets/screenshots/pa-t03-passo-05.webp</code>
-                          </div>
+                          <img src="assets/screenshots/pa-t03-passo-05.png" alt="Menu de opções de uma mensagem no Microsoft Teams exibindo a ação Agendar trabalho no Calendário" loading="lazy" decoding="async">
                         </div>
-                        <figcaption><b>Figura 3.5</b> — Execução do fluxo diretamente pela mensagem no Teams e prazo agendado no Calendário.</figcaption>
+                        <figcaption><b>Figura 3.5</b> — Execução do fluxo diretamente pela mensagem no Microsoft Teams.</figcaption>
                       </figure>
                     </div>
                   </li>
@@ -944,9 +885,9 @@
           <p style="margin-top:var(--space-3)"><strong style="color:#fff">Automatize seu dia a dia.</strong> Plataforma educativa gratuita que ensina pessoas sem conhecimentos técnicos a usar ferramentas de automação para simplificar tarefas do cotidiano.</p>
           <p class="extension-tag">Projeto de extensão universitária</p>
           <p>
-            <span class="editable" data-editable="universidade">[Nome da universidade]</span><br>
-            Curso: <span class="editable" data-editable="curso">[Nome do curso]</span><br>
-            Responsável: <span class="editable" data-editable="responsavel">[Nome do responsável]</span>
+            Universidade de Mogi das Cruzes<br>
+            Curso: Análise e Desenvolvimento de Sistemas<br>
+            Responsáveis: Juan Fernando, Murilo Victorino e Nicollas Santos
           </p>
         </div>
         <nav aria-label="Rodapé — páginas">

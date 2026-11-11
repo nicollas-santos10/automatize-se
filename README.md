@@ -93,42 +93,36 @@ Depois, acesse `http://localhost:8000` no navegador.
 
 ---
 
-## 6. Conteúdos que dependem de capturas de tela reais
+## 6. Capturas de tela dos tutoriais
 
-Os três tutoriais de `power-automate.html` possuem espaços reservados (`<figure class="screenshot">`) prontos para receber as capturas reais feitas em uma conta institucional de teste do Microsoft 365. Veja as orientações detalhadas em [`assets/screenshots/README.md`](assets/screenshots/README.md).
+Os três tutoriais de `power-automate.html` contam com 16 capturas de tela reais em `assets/screenshots/`:
 
-| Arquivo esperado | Tutorial e passo | O que deve aparecer na imagem |
+| Arquivo | Tutorial e passo | O que aparece na imagem |
 |---|---|---|
-| `assets/screenshots/pa-t01-passo-01.webp` | Tutorial 01 — Passo 1 | Lista `Trabalhos da Faculdade` criada no Microsoft To Do |
-| `assets/screenshots/pa-t01-passo-02.webp` | Tutorial 01 — Passo 2 | Criação do fluxo com o gatilho **Quando uma nova mensagem de canal é adicionada** (Teams) |
-| `assets/screenshots/pa-t01-passo-03.webp` | Tutorial 01 — Passo 3 | Gatilho configurado com a Equipe da disciplina e o Canal `Geral` |
-| `assets/screenshots/pa-t01-passo-04.webp` | Tutorial 01 — Passo 4 | Ação **Adicionar uma tarefa (V3)** (Microsoft To-Do Business) configurada |
-| `assets/screenshots/pa-t01-passo-05.webp` | Tutorial 01 — Passo 5 | Tarefa criada automaticamente na lista `Trabalhos da Faculdade` no Microsoft To Do |
-| `assets/screenshots/pa-t02-passo-01.webp` | Tutorial 02 — Passo 1 | Pasta `Materiais de Aula` criada no OneDrive for Business |
-| `assets/screenshots/pa-t02-passo-02.webp` | Tutorial 02 — Passo 2 | Criação do fluxo com o gatilho **Quando um arquivo é criado (somente propriedades)** (SharePoint) |
-| `assets/screenshots/pa-t02-passo-03.webp` | Tutorial 02 — Passo 3 | Gatilho configurado com o Endereço do Site da turma e a Biblioteca `Documentos` |
-| `assets/screenshots/pa-t02-passo-04.webp` | Tutorial 02 — Passo 4 | Ação **Obter conteúdo do arquivo** (SharePoint) preenchida com o *Identificador* dinâmico |
-| `assets/screenshots/pa-t02-passo-05.webp` | Tutorial 02 — Passo 5 | Ação **Criar arquivo** (OneDrive for Business) preenchida com pasta, nome e conteúdo |
-| `assets/screenshots/pa-t02-passo-06.webp` | Tutorial 02 — Passo 6 | Material de aula de teste salvo automaticamente na pasta `Materiais de Aula` no OneDrive |
-| `assets/screenshots/pa-t03-passo-01.webp` | Tutorial 03 — Passo 1 | Criação de Fluxo da nuvem instantâneo com o gatilho **Para uma mensagem selecionada** (Teams) |
-| `assets/screenshots/pa-t03-passo-02.webp` | Tutorial 03 — Passo 2 | Cartão do gatilho configurado com as entradas `Nome do trabalho` e `Data de entrega` |
-| `assets/screenshots/pa-t03-passo-03.webp` | Tutorial 03 — Passo 3 | Seleção da ação **Criar evento (V4)** do conector Office 365 Outlook |
-| `assets/screenshots/pa-t03-passo-04.webp` | Tutorial 03 — Passo 4 | Ação **Criar evento (V4)** preenchida com Calendário, Assunto, Data de entrega e fuso de Brasília |
-| `assets/screenshots/pa-t03-passo-05.webp` | Tutorial 03 — Passo 5 | Menu `... → Mais ações` na mensagem do Teams acionando o fluxo e evento criado no Calendário |
+| `assets/screenshots/pa-t01-passo-01.png` | Tutorial 01 — Passo 1 | Lista `Trabalhos da Faculdade` criada no Microsoft To Do |
+| `assets/screenshots/pa-t01-passo-02.png` | Tutorial 01 — Passo 2 | Criação do fluxo com o gatilho **Quando uma nova mensagem de canal é adicionada** (Teams) |
+| `assets/screenshots/pa-t01-passo-03.png` | Tutorial 01 — Passo 3 | Gatilho configurado com a Equipe da disciplina e o Canal `Geral` |
+| `assets/screenshots/pa-t01-passo-04.png` | Tutorial 01 — Passo 4 | Ação **Adicionar uma tarefa (V3)** (Microsoft To-Do Business) configurada |
+| `assets/screenshots/pa-t01-passo-05.png` | Tutorial 01 — Passo 5 | Tarefa criada automaticamente na lista `Trabalhos da Faculdade` no Microsoft To Do |
+| `assets/screenshots/pa-t02-passo-01.png` | Tutorial 02 — Passo 1 | Pasta `Materiais de Aula` criada no OneDrive for Business |
+| `assets/screenshots/pa-t02-passo-02.png` | Tutorial 02 — Passo 2 | Criação do fluxo com o gatilho **Quando um arquivo é criado (somente propriedades)** (SharePoint) |
+| `assets/screenshots/pa-t02-passo-03.png` | Tutorial 02 — Passo 3 | Gatilho configurado com o Endereço do Site da turma e a Biblioteca `Documentos` |
+| `assets/screenshots/pa-t02-passo-04.png` | Tutorial 02 — Passo 4 | Ação **Obter conteúdo do arquivo** (SharePoint) preenchida com o *Identificador* dinâmico |
+| `assets/screenshots/pa-t02-passo-05.png` | Tutorial 02 — Passo 5 | Ação **Criar arquivo** (OneDrive for Business) preenchida com pasta, nome e conteúdo |
+| `assets/screenshots/pa-t02-passo-06.png` | Tutorial 02 — Passo 6 | Material de aula de teste salvo automaticamente na pasta `Materiais de Aula` no OneDrive |
+| `assets/screenshots/pa-t03-passo-01.png` | Tutorial 03 — Passo 1 | Criação de Fluxo da nuvem instantâneo com o gatilho **Para uma mensagem selecionada (V2)** (Teams) |
+| `assets/screenshots/pa-t03-passo-02.png` | Tutorial 03 — Passo 2 | Cartão Adaptável do gatilho configurado com as entradas `Nome do trabalho` e `Data de entrega` |
+| `assets/screenshots/pa-t03-passo-03.png` | Tutorial 03 — Passo 3 | Seleção da ação **Criar evento (V4)** do conector Office 365 Outlook |
+| `assets/screenshots/pa-t03-passo-04.png` | Tutorial 03 — Passo 4 | Ação **Criar evento (V4)** preenchida com Calendário, Assunto, Data de entrega e fuso de Brasília |
+| `assets/screenshots/pa-t03-passo-05.png` | Tutorial 03 — Passo 5 | Menu da mensagem no Microsoft Teams acionando o fluxo **Agendar trabalho no Calendário** |
 
 ---
 
-## 7. Informações institucionais editáveis
+## 7. Identificação institucional
 
-Para evitar dados institucionais fictícios, todos os campos que dependem da sua universidade foram marcados com a classe `.editable` e o atributo `data-editable`. Procure por `data-editable` nos arquivos HTML para preencher:
-
-| Identificador (`data-editable`) | Texto provisório atual | Onde aparece |
-|---|---|---|
-| `universidade` | `[Nome da universidade]` | Rodapé de todas as páginas e ficha em `sobre.html` |
-| `curso` | `[Nome do curso]` | Rodapé de todas as páginas e ficha em `sobre.html` |
-| `responsavel` | `[Nome do responsável]` | Rodapé de todas as páginas e ficha em `sobre.html` |
-| `orientador` | `[Nome do(a) professor(a) orientador(a)]` | Ficha institucional em `sobre.html` |
-| `ano` | `2026` | Ficha institucional em `sobre.html` |
+- **Universidade:** Universidade de Mogi das Cruzes
+- **Curso:** Análise e Desenvolvimento de Sistemas
+- **Responsáveis:** Juan Fernando, Murilo Victorino e Nicollas Santos
 
 ---
 
